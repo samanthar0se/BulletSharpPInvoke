@@ -110,6 +110,8 @@ typedef struct bInvalidHandle {
     class btMultiBodyLinkFloatData;
     class btMultiBodyDoubleData;
     class btMultiBodyFloatData;
+    class btMultiBodyLinkColliderFloatData;
+    class btMultiBodyLinkColliderDoubleData;
 // -------------------------------------------------- //
     class PointerArray
     {
@@ -553,6 +555,8 @@ typedef struct bInvalidHandle {
         double m_deactivationTime;
         double m_friction;
         double m_rollingFriction;
+        double m_contactDamping;
+        double m_contactStiffness;
         double m_restitution;
         double m_hitFraction;
         double m_ccdSweptSphereRadius;
@@ -585,6 +589,8 @@ typedef struct bInvalidHandle {
         float m_deactivationTime;
         float m_friction;
         float m_rollingFriction;
+        float m_contactDamping;
+        float m_contactStiffness;
         float m_restitution;
         float m_hitFraction;
         float m_ccdSweptSphereRadius;
@@ -1353,9 +1359,6 @@ typedef struct bInvalidHandle {
         btVector3DoubleData m_thisPivotToThisComOffset;
         btVector3DoubleData m_jointAxisTop[6];
         btVector3DoubleData m_jointAxisBottom[6];
-        char *m_linkName;
-        char *m_jointName;
-        btCollisionObjectDoubleData *m_linkCollider;
         btVector3DoubleData m_linkInertia;
         double m_linkMass;
         int m_parentIndex;
@@ -1367,6 +1370,14 @@ typedef struct bInvalidHandle {
         double m_jointTorque[6];
         double m_jointDamping;
         double m_jointFriction;
+        double m_jointLowerLimit;
+        double m_jointUpperLimit;
+        double m_jointMaxForce;
+        double m_jointMaxVelocity;
+        char *m_linkName;
+        char *m_jointName;
+        btCollisionObjectDoubleData *m_linkCollider;
+        char *m_paddingPtr;
     };
 
 
@@ -1379,9 +1390,6 @@ typedef struct bInvalidHandle {
         btVector3FloatData m_thisPivotToThisComOffset;
         btVector3FloatData m_jointAxisTop[6];
         btVector3FloatData m_jointAxisBottom[6];
-        char *m_linkName;
-        char *m_jointName;
-        btCollisionObjectFloatData *m_linkCollider;
         btVector3FloatData m_linkInertia;
         int m_dofCount;
         float m_linkMass;
@@ -1393,6 +1401,14 @@ typedef struct bInvalidHandle {
         int m_posVarCount;
         float m_jointDamping;
         float m_jointFriction;
+        float m_jointLowerLimit;
+        float m_jointUpperLimit;
+        float m_jointMaxForce;
+        float m_jointMaxVelocity;
+        char *m_linkName;
+        char *m_jointName;
+        btCollisionObjectFloatData *m_linkCollider;
+        char *m_paddingPtr;
     };
 
 
@@ -1400,13 +1416,14 @@ typedef struct bInvalidHandle {
     class btMultiBodyDoubleData
     {
     public:
+        btTransformDoubleData m_baseWorldTransform;
+        btVector3DoubleData m_baseInertia;
+        double m_baseMass;
         char *m_baseName;
         btMultiBodyLinkDoubleData *m_links;
         btCollisionObjectDoubleData *m_baseCollider;
-        btTransformDoubleData m_baseWorldTransform;
-        btVector3DoubleData m_baseInertia;
+        char *m_paddingPtr;
         int m_numLinks;
-        double m_baseMass;
         char m_padding[4];
     };
 
@@ -1422,6 +1439,28 @@ typedef struct bInvalidHandle {
         btVector3FloatData m_baseInertia;
         float m_baseMass;
         int m_numLinks;
+    };
+
+
+// -------------------------------------------------- //
+    class btMultiBodyLinkColliderFloatData
+    {
+    public:
+        btCollisionObjectFloatData m_colObjData;
+        void *m_multiBody;
+        int m_link;
+        char m_padding[4];
+    };
+
+
+// -------------------------------------------------- //
+    class btMultiBodyLinkColliderDoubleData
+    {
+    public:
+        btCollisionObjectDoubleData m_colObjData;
+        void *m_multiBody;
+        int m_link;
+        char m_padding[4];
     };
 
 
