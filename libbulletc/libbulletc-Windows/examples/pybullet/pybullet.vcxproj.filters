@@ -1,0 +1,1239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\IKTrajectoryHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\InProcessExampleBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\TinyRendererVisualShapeConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\OpenGLWindow\SimpleCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\tgaimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\our_gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\TinyRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\InProcessMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerExampleBullet2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\SharedMemoryInProcessPhysicsC_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerSharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirectC_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerCommandProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\b3PluginManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory_C_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientC_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\Win32SharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PosixSharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\b3ResourcePath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\RobotLoggingUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinystr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxmlerror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxmlparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\stb_image\stb_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\LoadMeshFromObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\BulletUrdfImporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\URDF2Bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\UrdfParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\urdfStringSplit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3PosixThreadSupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3Win32ThreadSupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3ThreadSupportInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientUDP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientUDP_C_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\unix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\callbacks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\host.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\packet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\peer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\protocol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientTCP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientTCP_C_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src\SimpleSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src\ActiveSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src\PassiveSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btVehicleRaycaster_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btVoronoiSimplexSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btWheelInfo_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btWorldImporter_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\collections.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btActionInterface_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btAlignedObjectArray_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btAxisSweep3_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBox2dBox2dCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBox2dShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBoxBoxCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBoxBoxDetector_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBoxCollision_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBoxShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBroadphaseInterface_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBroadphaseProxy_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBulletFile_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBulletWorldImporter_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBulletXmlWorldImporter_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btBvhTriangleMeshShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCapsuleShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCharacterControllerInterface_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionConfiguration_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionCreateFunc_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionDispatcher_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionDispatcherMt_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionObject_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionObjectWrapper_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCollisionWorld_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCompoundCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCompoundCompoundCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCompoundFromGimpact_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCompoundShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConcaveShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConeShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConeTwistConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConstraintSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btContactConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btContactSolverInfo_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btContinuousConvexCollision_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvex2dConvex2dAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvex2dShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexCast_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexConcaveCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexConvexAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexHullShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexInternalShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexPenetrationDepthSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexPlaneCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexPointCloudShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexPolyhedron_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btConvexTriangleMeshShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCpuFeatureUtility_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btCylinderShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDantzigSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDbvt_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDbvtBroadphase_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDefaultCollisionConfiguration_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDefaultMotionState_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDefaultSoftBodySolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDiscreteCollisionDetectorInterface_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDiscreteDynamicsWorld_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDiscreteDynamicsWorldMt_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDispatcher_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btDynamicsWorld_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btEmptyCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btEmptyShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btFixedConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGearConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGeneric6DofConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGeneric6DofSpring2Constraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGeneric6DofSpringConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGeometryUtil_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGhostObject_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGImpactBvh_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGImpactCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGImpactQuantizedBvh_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGImpactShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGjkConvexCast_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGjkEpaPenetrationDepthSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btGjkPairDetector_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btHeightfieldTerrainShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btHinge2Constraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btHingeConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btIDebugDraw_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btKinematicCharacterController_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btLemkeSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btManifoldPoint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btManifoldResult_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMinkowskiPenetrationDepthSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMinkowskiSumShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMLCPSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMLCPSolverInterface_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMotionState_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBody_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyConstraintSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyDynamicsWorld_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyFixedConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyJointLimitConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyJointMotor_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyLink_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyLinkCollider_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodyPoint2Point_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodySliderConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiBodySolverConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultimaterialTriangleMeshShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btMultiSphereShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btNNCGConstraintSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btOptimizedBvh_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btOverlappingPairCache_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btOverlappingPairCallback_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btPersistentManifold_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btPoint2PointConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btPointCollector_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btPolarDecomposition_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btPolyhedralConvexShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btQuantizedBvh_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btRaycastVehicle_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btRigidBody_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btScaledBvhTriangleMeshShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSequentialImpulseConstraintSolver_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSerializer_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btShapeHull_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSimulationIslandManager_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSliderConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSoftBody_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSoftBodyConcaveCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSoftBodyHelpers_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSoftBodyRigidBodyCollisionConfiguration_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSoftBodySolvers_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSoftRigidCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSoftRigidDynamicsWorld_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSoftSoftCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSparseSdf3_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSphereBoxCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSphereShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSphereSphereCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btSphereTriangleCollisionAlgorithm_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btStaticPlaneShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btStridingMeshInterface_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTetrahedronShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btThreads_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTransformUtil_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleBuffer_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleCallback_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleIndexVertexArray_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleIndexVertexMaterialArray_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleInfoMap_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleMesh_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleMeshShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTriangleShapeEx_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btTypedConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btUniformScalingShape_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btUnionFind_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libbulletc\btUniversalConstraint_wrap.cpp">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\IKTrajectoryHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\TinyRendererVisualShapeConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\OpenGLWindow\SimpleCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerSharedMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirectC_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerCommandProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\b3PluginManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory_C_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientC_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\Win32SharedMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PosixSharedMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\b3ResourcePath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\RobotLoggingUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientUDP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientUDP_C_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientTCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientTCP_C_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btUniversalConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btVehicleRaycaster_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btVoronoiSimplexSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btWheelInfo_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btWorldImporter_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\bulletc.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\collections.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\conversion.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btActionInterface_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btAlignedObjectArray_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btAxisSweep3_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBox2dBox2dCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBox2dShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBoxBoxCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBoxBoxDetector_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBoxCollision_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBoxShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBroadphaseInterface_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBroadphaseProxy_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBulletFile_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBulletWorldImporter_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBulletXmlWorldImporter_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btBvhTriangleMeshShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCapsuleShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCharacterControllerInterface_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionConfiguration_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionCreateFunc_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionDispatcher_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionDispatcherMt_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionObject_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionObjectWrapper_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCollisionWorld_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCompoundCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCompoundCompoundCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCompoundFromGimpact_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCompoundShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConcaveShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConeShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConeTwistConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConstraintSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btContactConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btContactSolverInfo_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btContinuousConvexCollision_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvex2dConvex2dAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvex2dShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexCast_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexConcaveCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexConvexAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexHullShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexInternalShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexPenetrationDepthSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexPlaneCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexPointCloudShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexPolyhedron_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btConvexTriangleMeshShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCpuFeatureUtility_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btCylinderShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDantzigSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDbvt_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDbvtBroadphase_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDefaultCollisionConfiguration_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDefaultMotionState_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDefaultSoftBodySolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDiscreteCollisionDetectorInterface_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDiscreteDynamicsWorld_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDiscreteDynamicsWorldMt_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDispatcher_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btDynamicsWorld_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btEmptyCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btEmptyShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btFixedConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGearConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGeneric6DofConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGeneric6DofSpring2Constraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGeneric6DofSpringConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGeometryUtil_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGhostObject_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGImpactBvh_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGImpactCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGImpactQuantizedBvh_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGImpactShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGjkConvexCast_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGjkEpaPenetrationDepthSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btGjkPairDetector_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btHeightfieldTerrainShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btHinge2Constraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btHingeConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btIDebugDraw_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btKinematicCharacterController_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btLemkeSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btManifoldPoint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btManifoldResult_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMinkowskiPenetrationDepthSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMinkowskiSumShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMLCPSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMLCPSolverInterface_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMotionState_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBody_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyConstraintSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyDynamicsWorld_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyFixedConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyJointLimitConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyJointMotor_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyLink_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyLinkCollider_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodyPoint2Point_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodySliderConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiBodySolverConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultimaterialTriangleMeshShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btMultiSphereShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btNNCGConstraintSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btOptimizedBvh_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btOverlappingPairCache_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btOverlappingPairCallback_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btPersistentManifold_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btPoint2PointConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btPointCollector_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btPolarDecomposition_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btPolyhedralConvexShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btQuantizedBvh_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btRaycastVehicle_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btRigidBody_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btScaledBvhTriangleMeshShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSequentialImpulseConstraintSolver_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSerializer_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btShapeHull_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSimulationIslandManager_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSliderConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSoftBody_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSoftBodyConcaveCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSoftBodyHelpers_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSoftBodyRigidBodyCollisionConfiguration_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSoftBodySolvers_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSoftRigidCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSoftRigidDynamicsWorld_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSoftSoftCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSparseSdf3_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSphereBoxCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSphereShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSphereSphereCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btSphereTriangleCollisionAlgorithm_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btStaticPlaneShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btStridingMeshInterface_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTetrahedronShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btThreads_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTransformUtil_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleBuffer_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleCallback_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleIndexVertexArray_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleIndexVertexMaterialArray_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleInfoMap_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleMesh_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleMeshShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTriangleShapeEx_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btTypedConstraint_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btUniformScalingShape_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libbulletc\btUnionFind_wrap.h">
+      <Filter>Source Files Libbulletc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{885B27CD-15EB-3290-9467-A8C0E8F68A9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B8930429-CC86-3854-A4DF-506447C869F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files Libbulletc">
+      <UniqueIdentifier>{aab7d5fd-1ddf-473b-8795-31658bd03cf9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -302,6 +302,9 @@ ENDIF()
 
 OPTION(BUILD_BULLET3 "Set when you want to build Bullet 3" ON)
 
+	SET(PYTHON_LIBRARIES "C:/Users/iande/AppData/Local/Programs/Python/Python36/libs/python36.lib")
+	SET(PYTHON_LIBRARY   "C:/Users/iande/AppData/local/Programs/Python/Python36/libs/python36.lib")	
+
 # Optional Python configuration
 # Will not probe environment for Python configuration (which can abort the
 # build process) unless you explicitly turn on BUILD_PYBULLET.
@@ -319,9 +322,8 @@ IF(BUILD_PYBULLET)
 	FIND_PACKAGE(PythonInterp ${PYTHON_VERSION_PYBULLET} ${EXACT_PYTHON_VERSION_FLAG})
 	# python library should exactly match that of the interpreter
 	# the following can result in fatal error if you don't have the right python configuration
-	FIND_PACKAGE(PythonLibs ${PYTHON_VERSION_STRING} EXACT)
-	SET(PYTHON_LIBRARIES "C:/Users/iande/AppData/Local/Programs/Python/Python36/libs/python36.lib")
-	SET(PYTHON_LIBRARY "C:/Users/iande/AppData/local/Programs/Python/Python36/libs/python36.lib")
+
+	FIND_PACKAGE(PythonLibs)
 ENDIF(BUILD_PYBULLET)
 
 OPTION(BUILD_ENET "Set when you want to build apps with enet UDP networking support" ON)

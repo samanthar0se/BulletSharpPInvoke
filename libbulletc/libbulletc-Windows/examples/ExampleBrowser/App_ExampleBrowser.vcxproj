@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{555E2918-31DA-3EE0-8DF5-94CB3A144F00}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>App_ExampleBrowser</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">App_ExampleBrowser.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">App_ExampleBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">App_ExampleBrowser.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">App_ExampleBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">App_ExampleBrowser.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">App_ExampleBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">App_ExampleBrowser.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">App_ExampleBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/data D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\BulletExampleBrowserLib_Debug.lib;..\..\lib\Debug\Bullet3Common_Debug.lib;..\..\lib\Debug\BulletSoftBody_Debug.lib;..\..\lib\Debug\BulletDynamics_Debug.lib;..\..\lib\Debug\BulletCollision_Debug.lib;..\..\lib\Debug\BulletInverseDynamicsUtils_Debug.lib;..\..\lib\Debug\BulletInverseDynamics_Debug.lib;..\..\lib\Debug\LinearMath_Debug.lib;..\..\lib\Debug\OpenGLWindow_Debug.lib;..\..\lib\Debug\gwen_Debug.lib;..\..\lib\Debug\BussIK_Debug.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/Debug/App_ExampleBrowser.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/Debug/App_ExampleBrowser.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/data D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\BulletExampleBrowserLib.lib;..\..\lib\Release\Bullet3Common.lib;..\..\lib\Release\BulletSoftBody.lib;..\..\lib\Release\BulletDynamics.lib;..\..\lib\Release\BulletCollision.lib;..\..\lib\Release\BulletInverseDynamicsUtils.lib;..\..\lib\Release\BulletInverseDynamics.lib;..\..\lib\Release\LinearMath.lib;..\..\lib\Release\OpenGLWindow.lib;..\..\lib\Release\gwen.lib;..\..\lib\Release\BussIK.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/Release/App_ExampleBrowser.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/Release/App_ExampleBrowser.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/data D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\BulletExampleBrowserLib_MinsizeRel.lib;..\..\lib\MinSizeRel\Bullet3Common_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletSoftBody_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletDynamics_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletCollision_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletInverseDynamicsUtils_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletInverseDynamics_MinsizeRel.lib;..\..\lib\MinSizeRel\LinearMath_MinsizeRel.lib;..\..\lib\MinSizeRel\OpenGLWindow_MinsizeRel.lib;..\..\lib\MinSizeRel\gwen_MinsizeRel.lib;..\..\lib\MinSizeRel\BussIK_MinsizeRel.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/MinSizeRel/App_ExampleBrowser.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/MinSizeRel/App_ExampleBrowser.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\src;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/data D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\BulletExampleBrowserLib_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\Bullet3Common_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletSoftBody_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletDynamics_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletCollision_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletInverseDynamicsUtils_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletInverseDynamics_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\LinearMath_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\OpenGLWindow_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\gwen_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BussIK_RelWithDebugInfo.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/RelWithDebInfo/App_ExampleBrowser.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/RelWithDebInfo/App_ExampleBrowser.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src -BD:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows --check-stamp-file D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src -BD:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows --check-stamp-file D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src -BD:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows --check-stamp-file D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src -BD:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows --check-stamp-file D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/examples/ExampleBrowser/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace/Physics/newBulletBuild/Ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\main.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\ExampleEntries.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\ExampleEntries.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\Chain.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\Chain.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\Bridge.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\Bridge.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\RigidBodyFromObj.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\RigidBodyFromObj.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleBox.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleBox.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\MultipleBoxes.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\MultipleBoxes.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\CompoundBoxes.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\CompoundBoxes.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleCloth.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleCloth.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleJoint.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleJoint.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\NewtonsCradle.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\NewtonsCradle.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\InclinedPlane.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\InclinedPlane.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\MultiPendulum.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\MultiPendulum.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\geometry.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\model.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\tgaimage.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\our_gl.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\TinyRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\TinyRendererVisualShapeConverter.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\TinyRendererVisualShapeConverter.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\IKTrajectoryHelper.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\IKTrajectoryHelper.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServer.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory_C_API.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClient.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientC_API.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerExample.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerExampleBullet2.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientExample.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PosixSharedMemory.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\Win32SharedMemory.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\InProcessMemory.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerSharedMemory.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirect.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirect.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirectC_API.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirectC_API.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\SharedMemoryInProcessPhysicsC_API.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsLoopBack.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsLoopBack.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsLoopBackC_API.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsLoopBackC_API.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerCommandProcessor.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerCommandProcessor.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\SharedMemoryCommands.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\SharedMemoryPublic.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\b3PluginManager.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RobotSimulator\b3RobotSimulatorClientAPI.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RobotSimulator\b3RobotSimulatorClientAPI.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\BasicDemo\BasicExample.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\BasicDemo\BasicExample.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\InverseDynamics\InverseDynamicsExample.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\InverseDynamics\InverseDynamicsExample.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\InverseKinematics\InverseKinematicsExample.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\InverseKinematics\InverseKinematicsExample.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ForkLift\ForkLiftDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ForkLift\ForkLiftDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreadedDemo\MultiThreadedDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreadedDemo\MultiThreadedDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreadedDemo\CommonRigidBodyMTBase.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreadedDemo\CommonRigidBodyMTBase.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Tutorial\Tutorial.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Tutorial\Tutorial.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Tutorial\Dof6ConstraintTutorial.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Tutorial\Dof6ConstraintTutorial.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Evolution\NN3DWalkers.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Evolution\NN3DWalkers.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Evolution\NN3DWalkersTimeWarpBase.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\NewtonsRopeCradle.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\NewtonsRopeCradle.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\CollisionSdkC_Api.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\CollisionSdkC_Api.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\CollisionTutorialBullet2.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\CollisionTutorialBullet2.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\Bullet2CollisionSdk.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\Bullet2CollisionSdk.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\CollisionSdkInterface.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\RealTimeBullet3CollisionSdk.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\RealTimeBullet3CollisionSdk.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\GyroscopicDemo\GyroscopicSetup.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\GyroscopicDemo\GyroscopicSetup.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Planar2D\Planar2D.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Planar2D\Planar2D.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RollingFrictionDemo\RollingFrictionDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RollingFrictionDemo\RollingFrictionDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\FractureDemo.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\btFractureBody.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\btFractureDynamicsWorld.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\FractureDemo.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\btFractureBody.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\btFractureDynamicsWorld.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\DynamicControlDemo\MotorDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\DynamicControlDemo\MotorDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\MultiThreadingExample.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3PosixThreadSupport.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3Win32ThreadSupport.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3ThreadSupportInterface.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\btTaskScheduler.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TinyRendererSetup.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesCanvas.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesCanvas.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesFontData.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesFontData.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\DynamicTexturedCubeDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\DynamicTexturedCubeDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TinyVRGui.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TinyVRGui.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\GripperGraspExample.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\GripperGraspExample.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\R2D2GraspExample.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\R2D2GraspExample.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\KukaGraspExample.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\KukaGraspExample.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\CoordinateSystemDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\CoordinateSystemDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\RaytracerSetup.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\RaytracerSetup.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\RenderInstancingDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\RenderInstancingDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesExample.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Benchmarks\BenchmarkDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Benchmarks\BenchmarkDemo.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Benchmarks\landscapeData.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Benchmarks\TaruData.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Raycast\RaytestDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\BspConverter.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBullet\SerializeSetup.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBullet\SerializeSetup.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader\bChunk.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader\bFile.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader\bDNA.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader\btBulletFile.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\BspLoader.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\ImportBspExample.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\btMatrix4x4.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\ColladaGraphicsInstance.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\ImportColladaSetup.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\ImportObjExample.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\LoadMeshFromObj.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportSTLDemo\ImportSTLSetup.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportSTLDemo\LoadMeshFromSTL.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\ConvertRigidBodies2MultiBody.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\ImportURDFSetup.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\URDF2Bullet.h" />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\urdf_samples.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\ImportMJCFSetup.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\ImportMJCFSetup.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\BspConverter.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\BspLoader.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\ImportBspExample.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\ImportColladaSetup.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\ImportObjExample.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\LoadMeshFromObj.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportSTLDemo\ImportSTLSetup.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportSDFDemo\ImportSDFSetup.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\ImportURDFSetup.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\URDF2Bullet.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\UrdfParser.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\RobotLoggingUtil.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\RobotLoggingUtil.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\urdfStringSplit.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\urdfStringSplit.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\BulletUrdfImporter.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\BulletUrdfImporter.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\VoronoiFracture\VoronoiFractureDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\VoronoiFracture\VoronoiFractureDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\VoronoiFracture\btConvexConvexMprAlgorithm.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\VoronoiFracture\btConvexConvexMprAlgorithm.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Vehicles\Hinge2Vehicle.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Vehicles\Hinge2Vehicle.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\Pendulum.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\MultiBodySoftContact.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\TestJointTorqueSetup.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\TestJointTorqueSetup.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\InvertedPendulumPDControl.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\InvertedPendulumPDControl.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\MultiBodyConstraintFeedback.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\MultiDofDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\MultiDofDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\RigidBody\RigidBodySoftContact.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\TestHingeTorque.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\TestHingeTorque.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\ConstraintDemo.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\ConstraintDemo.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\Dof6Spring2Setup.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\Dof6Spring2Setup.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\ConstraintPhysicsSetup.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\ConstraintPhysicsSetup.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\stb_image\stb_image.cpp"  />
+    <ClInclude Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\stb_image\stb_image.h" />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinystr.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxml.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxmlerror.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxmlparser.cpp"  />
+    <ClCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\InProcessExampleBrowser.cpp"  />
+    <ResourceCompile Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\src\build3\bullet.rc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\ZERO_CHECK.vcxproj">
+      <Project>{EFC2A4A8-EA1A-320E-A7E5-BD1DDF8C19B0}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\src\Bullet3Common\Bullet3Common.vcxproj">
+      <Project>{DCCF49F5-9787-34B3-82AC-85D81D7E33AC}</Project>
+      <Name>Bullet3Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{7EBD4EDF-6BCC-3A08-899E-B48A8BD11027}</Project>
+      <Name>BulletCollision</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\src\BulletDynamics\BulletDynamics.vcxproj">
+      <Project>{4FF0F9B5-0670-31B7-9323-F948B765CEC6}</Project>
+      <Name>BulletDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ExampleBrowser\BulletExampleBrowserLib.vcxproj">
+      <Project>{DCE208EE-4928-3CD6-BA04-4B0BB54B5A52}</Project>
+      <Name>BulletExampleBrowserLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\src\BulletInverseDynamics\BulletInverseDynamics.vcxproj">
+      <Project>{59DA6E5F-4A98-3A06-B03B-0E4C990BF2E4}</Project>
+      <Name>BulletInverseDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\Extras\InverseDynamics\BulletInverseDynamicsUtils.vcxproj">
+      <Project>{2ECD7427-0918-33DC-8271-27DB3F5DA540}</Project>
+      <Name>BulletInverseDynamicsUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\src\BulletSoftBody\BulletSoftBody.vcxproj">
+      <Project>{E0B83BFC-650E-37E0-9533-E686E5B5533D}</Project>
+      <Name>BulletSoftBody</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ThirdPartyLibs\BussIK\BussIK.vcxproj">
+      <Project>{3D8947BE-E055-35C4-8511-0A439D87B521}</Project>
+      <Name>BussIK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\src\LinearMath\LinearMath.vcxproj">
+      <Project>{9C5A0402-DB06-34B2-A4C6-DE02D9CF6927}</Project>
+      <Name>LinearMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\OpenGLWindow\OpenGLWindow.vcxproj">
+      <Project>{0D170976-D12C-38A9-9638-950100A448F1}</Project>
+      <Name>OpenGLWindow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\Physics\newBulletBuild\Ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\examples\ThirdPartyLibs\Gwen\gwen.vcxproj">
+      <Project>{102A648B-FBCE-3660-94B2-42C5087ED1E2}</Project>
+      <Name>gwen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

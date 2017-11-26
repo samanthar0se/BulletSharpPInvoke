@@ -3,7 +3,7 @@
 #include <BulletCollision/CollisionShapes/btStridingMeshInterface.h>
 #include <BulletDynamics/Dynamics/btDynamicsWorld.h>
 #include <BulletDynamics/Dynamics/btRigidBody.h>
-#include <btWorldImporter.h>
+#include <../Extras/Serialize/BulletWorldImporter/btWorldImporter.h>
 
 #include "btWorldImporter_wrap.h"
 

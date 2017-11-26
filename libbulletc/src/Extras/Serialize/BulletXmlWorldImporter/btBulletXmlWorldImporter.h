@@ -38,7 +38,7 @@ struct btTypedConstraintFloatData;
 struct btCompoundShapeChildData;
 
 #include "LinearMath/btAlignedObjectArray.h"
-#include "btWorldImporter.h"
+#include "../Extras/Serialize/BulletWorldImporter/btWorldImporter.h"
 
 class btBulletXmlWorldImporter : public btWorldImporter
 {

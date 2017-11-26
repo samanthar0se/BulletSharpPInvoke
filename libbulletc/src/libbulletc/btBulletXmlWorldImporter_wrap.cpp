@@ -1,5 +1,5 @@
 #include <BulletDynamics/Dynamics/btDynamicsWorld.h>
-#include <btBulletXmlWorldImporter.h>
+#include <../Extras/Serialize/BulletXmlWorldImporter/btBulletXmlWorldImporter.h>
 
 #include "btBulletXmlWorldImporter_wrap.h"
 
