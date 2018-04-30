@@ -63,7 +63,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\openvr\headers;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\openvr\samples\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\openvr\headers;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\openvr\samples\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -85,7 +85,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\openvr\headers;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\openvr\samples\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\openvr\headers;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\openvr\samples\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -107,7 +107,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\openvr\headers;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\openvr\samples\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\openvr\headers;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\openvr\samples\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -129,7 +129,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\openvr\headers;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\openvr\samples\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\openvr\headers;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\openvr\samples\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

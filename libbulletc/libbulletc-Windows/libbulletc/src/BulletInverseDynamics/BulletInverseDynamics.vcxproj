@@ -75,7 +75,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -91,15 +91,15 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -112,7 +112,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
@@ -126,16 +126,16 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
@@ -162,16 +162,16 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -184,7 +184,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -199,15 +199,15 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -219,10 +219,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletInverseDynamics/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletInverseDynamics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/src/BulletInverseDynamics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/src/BulletInverseDynamics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -230,12 +230,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletInverseDynamics/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletInverseDynamics/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\src\BulletInverseDynamics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletInverseDynamics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletInverseDynamics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/src/BulletInverseDynamics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/src/BulletInverseDynamics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -243,12 +243,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletInverseDynamics/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletInverseDynamics/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\src\BulletInverseDynamics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletInverseDynamics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletInverseDynamics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/src/BulletInverseDynamics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/src/BulletInverseDynamics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -256,12 +256,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletInverseDynamics/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletInverseDynamics/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\src\BulletInverseDynamics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletInverseDynamics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletInverseDynamics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/src/BulletInverseDynamics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/src/BulletInverseDynamics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -269,27 +269,27 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletInverseDynamics/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletInverseDynamics/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\src\BulletInverseDynamics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDMath.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\MultiBodyTree.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\MultiBodyTreeImpl.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDConfig.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDConfigEigen.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDMath.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDConfigBuiltin.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDErrorMessages.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\MultiBodyTree.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\IDEigenInterface.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\IDMatVec.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\IDLinearMathInterface.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\MultiBodyTreeImpl.hpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.hpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDMath.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\MultiBodyTree.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\MultiBodyTreeImpl.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDConfig.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDConfigEigen.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDMath.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDConfigBuiltin.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDErrorMessages.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\MultiBodyTree.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\IDEigenInterface.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\IDMatVec.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\IDLinearMathInterface.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\MultiBodyTreeImpl.hpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\ZERO_CHECK.vcxproj">

@@ -1,56 +1,56 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDMath.cpp">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDMath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\MultiBodyTree.cpp">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\MultiBodyTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.cpp">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\MultiBodyTreeImpl.cpp">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\MultiBodyTreeImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDConfig.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDConfig.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDConfigEigen.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDConfigEigen.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDMath.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDMath.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDConfigBuiltin.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDConfigBuiltin.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\IDErrorMessages.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\IDErrorMessages.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\MultiBodyTree.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\MultiBodyTree.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\IDEigenInterface.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\IDEigenInterface.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\IDMatVec.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\IDMatVec.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\IDLinearMathInterface.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\IDLinearMathInterface.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\MultiBodyTreeImpl.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\MultiBodyTreeImpl.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.hpp">
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\details\MultiBodyTreeInitCache.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src\BulletInverseDynamics\CMakeLists.txt" />
+    <CustomBuild Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src\BulletInverseDynamics\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

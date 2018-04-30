@@ -27,7 +27,9 @@ int btMultiBodyTreeCreator::createFromBtMultiBody(const btMultiBody *btmb, const
         } else {
             link.joint_type = FLOATING;
         }
-        btTransform transform(btmb->getBaseWorldTransform());
+		btTransform transform=(btmb->getBaseWorldTransform());
+		//compute inverse dynamics in body-fixed frame
+		transform.setIdentity();
 
         link.parent_r_parent_body_ref(0) = transform.getOrigin()[0];
         link.parent_r_parent_body_ref(1) = transform.getOrigin()[1];
@@ -183,10 +185,10 @@ int btMultiBodyTreeCreator::createFromBtMultiBody(const btMultiBody *btmb, const
                 break;
             case btMultibodyLink::eSpherical:
                 error_message("spherical joints not implemented\n");
-                return -1;
+                return -2;
             case btMultibodyLink::ePlanar:
                 error_message("planar joints not implemented\n");
-                return -1;
+                return -3;
             case btMultibodyLink::eFixed:
                 link.joint_type = FIXED;
                 // random unit vector
@@ -203,7 +205,7 @@ int btMultiBodyTreeCreator::createFromBtMultiBody(const btMultiBody *btmb, const
             default:
                 error_message("unknown btMultiBody::eFeatherstoneJointType %d\n",
                               bt_link.m_jointType);
-                return -1;
+                return -4;
         }
         if (link.parent_index > 0) {  // parent body isn't the root
             const btMultibodyLink &bt_parent_link = btmb->getLink(link.parent_index - 1);
@@ -237,7 +239,7 @@ int btMultiBodyTreeCreator::getNumBodies(int *num_bodies) const {
     return 0;
 }
 
-int btMultiBodyTreeCreator::getBody(int body_index, int *parent_index, JointType *joint_type,
+int btMultiBodyTreeCreator::getBody(const int body_index, int *parent_index, JointType *joint_type,
                                     vec3 *parent_r_parent_body_ref, mat33 *body_T_parent_ref,
                                     vec3 *body_axis_of_motion, idScalar *mass,
                                     vec3 *body_r_body_com, mat33 *body_I_body, int *user_int,

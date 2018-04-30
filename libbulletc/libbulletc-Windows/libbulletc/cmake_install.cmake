@@ -1,4 +1,4 @@
-# Install script for directory: D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3
+# Install script for directory: D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/bullet" TYPE FILE FILES
-    "D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/UseBullet.cmake"
+    "D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/UseBullet.cmake"
     "D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/BulletConfig.cmake"
     )
 endif()

@@ -83,7 +83,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -99,15 +99,15 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,7 +117,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/data D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/data
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/data D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/data
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -144,7 +144,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
@@ -158,16 +158,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -177,7 +177,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/data D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/data
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/data D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/data
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -204,7 +204,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
@@ -218,16 +218,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -237,7 +237,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/data D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/data
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/data D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/data
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -264,7 +264,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -279,15 +279,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\.;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -297,7 +297,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/data D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/data
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/data D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/data
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -323,10 +323,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ExampleBrowser/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/ExampleBrowser/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/ExampleBrowser/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -334,12 +334,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ExampleBrowser/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\examples\ExampleBrowser\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ExampleBrowser/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/ExampleBrowser/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/ExampleBrowser/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -347,12 +347,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ExampleBrowser/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\examples\ExampleBrowser\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ExampleBrowser/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/ExampleBrowser/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/ExampleBrowser/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -360,12 +360,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ExampleBrowser/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\examples\ExampleBrowser\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ExampleBrowser/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/ExampleBrowser/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/ExampleBrowser/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -373,235 +373,235 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ExampleBrowser/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ExampleBrowser/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\examples\ExampleBrowser\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\main.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\ExampleEntries.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\ExampleEntries.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\Chain.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\Chain.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\Bridge.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\Bridge.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\RigidBodyFromObj.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\RigidBodyFromObj.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\SimpleBox.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\SimpleBox.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\MultipleBoxes.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\MultipleBoxes.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\CompoundBoxes.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\CompoundBoxes.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\SimpleCloth.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\SimpleCloth.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\SimpleJoint.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\SimpleJoint.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\NewtonsCradle.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\NewtonsCradle.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\InclinedPlane.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\InclinedPlane.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\MultiPendulum.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\MultiPendulum.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\geometry.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\model.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\tgaimage.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\our_gl.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\TinyRenderer.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\TinyRendererVisualShapeConverter.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\TinyRendererVisualShapeConverter.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\IKTrajectoryHelper.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\IKTrajectoryHelper.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServer.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientSharedMemory.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientSharedMemory_C_API.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClient.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientC_API.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerExample.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerExampleBullet2.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientExample.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PosixSharedMemory.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\Win32SharedMemory.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\InProcessMemory.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerSharedMemory.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsDirect.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsDirect.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsDirectC_API.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsDirectC_API.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\SharedMemoryInProcessPhysicsC_API.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsLoopBack.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsLoopBack.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsLoopBackC_API.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsLoopBackC_API.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerCommandProcessor.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerCommandProcessor.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\SharedMemoryCommands.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\SharedMemoryPublic.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\b3PluginManager.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RobotSimulator\b3RobotSimulatorClientAPI.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RobotSimulator\b3RobotSimulatorClientAPI.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\BasicDemo\BasicExample.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\BasicDemo\BasicExample.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\InverseDynamics\InverseDynamicsExample.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\InverseDynamics\InverseDynamicsExample.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\InverseKinematics\InverseKinematicsExample.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\InverseKinematics\InverseKinematicsExample.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ForkLift\ForkLiftDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ForkLift\ForkLiftDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreadedDemo\MultiThreadedDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreadedDemo\MultiThreadedDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreadedDemo\CommonRigidBodyMTBase.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreadedDemo\CommonRigidBodyMTBase.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Tutorial\Tutorial.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Tutorial\Tutorial.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Tutorial\Dof6ConstraintTutorial.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Tutorial\Dof6ConstraintTutorial.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Evolution\NN3DWalkers.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Evolution\NN3DWalkers.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Evolution\NN3DWalkersTimeWarpBase.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\NewtonsRopeCradle.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExtendedTutorials\NewtonsRopeCradle.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\CollisionSdkC_Api.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\CollisionSdkC_Api.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\CollisionTutorialBullet2.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\CollisionTutorialBullet2.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\Internal\Bullet2CollisionSdk.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\Internal\Bullet2CollisionSdk.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\Internal\CollisionSdkInterface.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\Internal\RealTimeBullet3CollisionSdk.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Collision\Internal\RealTimeBullet3CollisionSdk.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\GyroscopicDemo\GyroscopicSetup.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\GyroscopicDemo\GyroscopicSetup.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Planar2D\Planar2D.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Planar2D\Planar2D.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RollingFrictionDemo\RollingFrictionDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RollingFrictionDemo\RollingFrictionDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\FractureDemo\FractureDemo.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\FractureDemo\btFractureBody.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\FractureDemo\btFractureDynamicsWorld.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\FractureDemo\FractureDemo.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\FractureDemo\btFractureBody.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\FractureDemo\btFractureDynamicsWorld.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\DynamicControlDemo\MotorDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\DynamicControlDemo\MotorDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreading\MultiThreadingExample.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreading\b3PosixThreadSupport.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreading\b3Win32ThreadSupport.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreading\b3ThreadSupportInterface.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreading\btTaskScheduler.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\TinyRendererSetup.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\TimeSeriesCanvas.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\TimeSeriesCanvas.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\TimeSeriesFontData.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\TimeSeriesFontData.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\DynamicTexturedCubeDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\DynamicTexturedCubeDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\TinyVRGui.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\TinyVRGui.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RoboticsLearning\GripperGraspExample.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RoboticsLearning\GripperGraspExample.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RoboticsLearning\R2D2GraspExample.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RoboticsLearning\R2D2GraspExample.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RoboticsLearning\KukaGraspExample.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RoboticsLearning\KukaGraspExample.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\CoordinateSystemDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\CoordinateSystemDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\RaytracerSetup.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\RaytracerSetup.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\RenderInstancingDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\RenderInstancingDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RenderingExamples\TimeSeriesExample.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Benchmarks\BenchmarkDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Benchmarks\BenchmarkDemo.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Benchmarks\landscapeData.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Benchmarks\TaruData.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Raycast\RaytestDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportBsp\BspConverter.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportBullet\SerializeSetup.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportBullet\SerializeSetup.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletFileLoader\bChunk.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletFileLoader\bFile.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletFileLoader\bDNA.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletFileLoader\btBulletFile.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportBsp\BspLoader.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportBsp\ImportBspExample.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportColladaDemo\btMatrix4x4.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportColladaDemo\ColladaGraphicsInstance.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportColladaDemo\ImportColladaSetup.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportObjDemo\ImportObjExample.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportObjDemo\LoadMeshFromObj.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportSTLDemo\ImportSTLSetup.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportSTLDemo\LoadMeshFromSTL.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\ConvertRigidBodies2MultiBody.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\ImportURDFSetup.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\URDF2Bullet.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\urdf_samples.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportMJCFDemo\ImportMJCFSetup.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportMJCFDemo\ImportMJCFSetup.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportBsp\BspConverter.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportBsp\BspLoader.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportBsp\ImportBspExample.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportColladaDemo\ImportColladaSetup.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportObjDemo\ImportObjExample.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportObjDemo\LoadMeshFromObj.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportSTLDemo\ImportSTLSetup.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportSDFDemo\ImportSDFSetup.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\ImportURDFSetup.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\URDF2Bullet.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\UrdfParser.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Utils\RobotLoggingUtil.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Utils\RobotLoggingUtil.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\urdfStringSplit.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\urdfStringSplit.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\BulletUrdfImporter.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\BulletUrdfImporter.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\VoronoiFracture\VoronoiFractureDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\VoronoiFracture\VoronoiFractureDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\VoronoiFracture\btConvexConvexMprAlgorithm.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\VoronoiFracture\btConvexConvexMprAlgorithm.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Vehicles\Hinge2Vehicle.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Vehicles\Hinge2Vehicle.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\Pendulum.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\MultiBodySoftContact.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\TestJointTorqueSetup.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\TestJointTorqueSetup.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\InvertedPendulumPDControl.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\InvertedPendulumPDControl.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\MultiBodyConstraintFeedback.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\MultiDofDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiBody\MultiDofDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\RigidBody\RigidBodySoftContact.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Constraints\TestHingeTorque.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Constraints\TestHingeTorque.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Constraints\ConstraintDemo.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Constraints\ConstraintDemo.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Constraints\Dof6Spring2Setup.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Constraints\Dof6Spring2Setup.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Constraints\ConstraintPhysicsSetup.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Constraints\ConstraintPhysicsSetup.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\stb_image\stb_image.cpp"  />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\stb_image\stb_image.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\tinyxml\tinystr.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\tinyxml\tinyxml.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\tinyxml\tinyxmlerror.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\tinyxml\tinyxmlparser.cpp"  />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\InProcessExampleBrowser.cpp"  />
-    <ResourceCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\build3\bullet.rc"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\main.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\ExampleEntries.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\ExampleEntries.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\Chain.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\Chain.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\Bridge.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\Bridge.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\RigidBodyFromObj.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\RigidBodyFromObj.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleBox.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleBox.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\MultipleBoxes.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\MultipleBoxes.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\CompoundBoxes.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\CompoundBoxes.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleCloth.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleCloth.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleJoint.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\SimpleJoint.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\NewtonsCradle.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\NewtonsCradle.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\InclinedPlane.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\InclinedPlane.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\MultiPendulum.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\MultiPendulum.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\geometry.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\model.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\tgaimage.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\our_gl.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\TinyRenderer.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\TinyRendererVisualShapeConverter.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\TinyRendererVisualShapeConverter.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\IKTrajectoryHelper.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\IKTrajectoryHelper.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServer.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory_C_API.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClient.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientC_API.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerExample.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerExampleBullet2.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientExample.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PosixSharedMemory.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\Win32SharedMemory.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\InProcessMemory.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerSharedMemory.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirect.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirect.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirectC_API.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirectC_API.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\SharedMemoryInProcessPhysicsC_API.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsLoopBack.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsLoopBack.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsLoopBackC_API.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsLoopBackC_API.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerCommandProcessor.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerCommandProcessor.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\SharedMemoryCommands.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\SharedMemoryPublic.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\b3PluginManager.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RobotSimulator\b3RobotSimulatorClientAPI.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RobotSimulator\b3RobotSimulatorClientAPI.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\BasicDemo\BasicExample.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\BasicDemo\BasicExample.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\InverseDynamics\InverseDynamicsExample.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\InverseDynamics\InverseDynamicsExample.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\InverseKinematics\InverseKinematicsExample.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\InverseKinematics\InverseKinematicsExample.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ForkLift\ForkLiftDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ForkLift\ForkLiftDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreadedDemo\MultiThreadedDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreadedDemo\MultiThreadedDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreadedDemo\CommonRigidBodyMTBase.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreadedDemo\CommonRigidBodyMTBase.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Tutorial\Tutorial.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Tutorial\Tutorial.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Tutorial\Dof6ConstraintTutorial.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Tutorial\Dof6ConstraintTutorial.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Evolution\NN3DWalkers.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Evolution\NN3DWalkers.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Evolution\NN3DWalkersTimeWarpBase.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\NewtonsRopeCradle.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExtendedTutorials\NewtonsRopeCradle.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\CollisionSdkC_Api.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\CollisionSdkC_Api.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\CollisionTutorialBullet2.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\CollisionTutorialBullet2.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\Bullet2CollisionSdk.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\Bullet2CollisionSdk.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\CollisionSdkInterface.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\RealTimeBullet3CollisionSdk.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Collision\Internal\RealTimeBullet3CollisionSdk.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\GyroscopicDemo\GyroscopicSetup.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\GyroscopicDemo\GyroscopicSetup.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Planar2D\Planar2D.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Planar2D\Planar2D.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RollingFrictionDemo\RollingFrictionDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RollingFrictionDemo\RollingFrictionDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\FractureDemo.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\btFractureBody.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\btFractureDynamicsWorld.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\FractureDemo.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\btFractureBody.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\FractureDemo\btFractureDynamicsWorld.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\DynamicControlDemo\MotorDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\DynamicControlDemo\MotorDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\MultiThreadingExample.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3PosixThreadSupport.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3Win32ThreadSupport.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3ThreadSupportInterface.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\btTaskScheduler.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TinyRendererSetup.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesCanvas.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesCanvas.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesFontData.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesFontData.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\DynamicTexturedCubeDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\DynamicTexturedCubeDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TinyVRGui.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TinyVRGui.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\GripperGraspExample.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\GripperGraspExample.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\R2D2GraspExample.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\R2D2GraspExample.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\KukaGraspExample.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RoboticsLearning\KukaGraspExample.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\CoordinateSystemDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\CoordinateSystemDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\RaytracerSetup.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\RaytracerSetup.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\RenderInstancingDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\RenderInstancingDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RenderingExamples\TimeSeriesExample.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Benchmarks\BenchmarkDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Benchmarks\BenchmarkDemo.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Benchmarks\landscapeData.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Benchmarks\TaruData.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Raycast\RaytestDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\BspConverter.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBullet\SerializeSetup.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBullet\SerializeSetup.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader\bChunk.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader\bFile.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader\bDNA.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader\btBulletFile.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\BspLoader.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\ImportBspExample.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\btMatrix4x4.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\ColladaGraphicsInstance.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\ImportColladaSetup.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\ImportObjExample.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\LoadMeshFromObj.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportSTLDemo\ImportSTLSetup.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportSTLDemo\LoadMeshFromSTL.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\ConvertRigidBodies2MultiBody.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\ImportURDFSetup.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\URDF2Bullet.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\urdf_samples.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\ImportMJCFSetup.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\ImportMJCFSetup.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\BspConverter.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\BspLoader.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportBsp\ImportBspExample.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\ImportColladaSetup.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\ImportObjExample.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\LoadMeshFromObj.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportSTLDemo\ImportSTLSetup.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportSDFDemo\ImportSDFSetup.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\ImportURDFSetup.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\URDF2Bullet.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\UrdfParser.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\RobotLoggingUtil.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\RobotLoggingUtil.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\urdfStringSplit.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\urdfStringSplit.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\BulletUrdfImporter.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\BulletUrdfImporter.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\VoronoiFracture\VoronoiFractureDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\VoronoiFracture\VoronoiFractureDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\VoronoiFracture\btConvexConvexMprAlgorithm.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\VoronoiFracture\btConvexConvexMprAlgorithm.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Vehicles\Hinge2Vehicle.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Vehicles\Hinge2Vehicle.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\Pendulum.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\MultiBodySoftContact.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\TestJointTorqueSetup.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\TestJointTorqueSetup.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\InvertedPendulumPDControl.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\InvertedPendulumPDControl.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\MultiBodyConstraintFeedback.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\MultiDofDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiBody\MultiDofDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\RigidBody\RigidBodySoftContact.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\TestHingeTorque.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\TestHingeTorque.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\ConstraintDemo.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\ConstraintDemo.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\Dof6Spring2Setup.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\Dof6Spring2Setup.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\ConstraintPhysicsSetup.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Constraints\ConstraintPhysicsSetup.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\stb_image\stb_image.cpp"  />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\stb_image\stb_image.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinystr.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxml.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxmlerror.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxmlparser.cpp"  />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\InProcessExampleBrowser.cpp"  />
+    <ResourceCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\build3\bullet.rc"  />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\ZERO_CHECK.vcxproj">

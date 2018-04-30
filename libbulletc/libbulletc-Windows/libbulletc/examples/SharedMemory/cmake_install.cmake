@@ -1,4 +1,4 @@
-# Install script for directory: D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/SharedMemory
+# Install script for directory: D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/SharedMemory
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

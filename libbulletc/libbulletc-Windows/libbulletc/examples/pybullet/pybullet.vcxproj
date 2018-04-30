@@ -70,20 +70,20 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pybullet.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libbulletc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pybullet_MinsizeRel</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pybullet.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libbulletc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pybullet_RelWithDebugInfo</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\BulletSharpPInvoke\libbulletc\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\HACD;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletXmlWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletFileLoader;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\HACD;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletXmlWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\libbulletc\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -99,15 +99,15 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR="Debug";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR="Debug";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR=\"Debug\";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR=\"Debug\";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -115,7 +115,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;ws2_32.lib;..\..\lib\Debug\BulletExampleBrowserLib_Debug.lib;..\..\lib\Debug\BulletFileLoader_Debug.lib;..\..\lib\Debug\BulletWorldImporter_Debug.lib;..\..\lib\Debug\BulletSoftBody_Debug.lib;..\..\lib\Debug\BulletDynamics_Debug.lib;..\..\lib\Debug\BulletCollision_Debug.lib;..\..\lib\Debug\BulletInverseDynamicsUtils_Debug.lib;..\..\lib\Debug\BulletInverseDynamics_Debug.lib;..\..\lib\Debug\LinearMath_Debug.lib;..\..\lib\Debug\OpenGLWindow_Debug.lib;..\..\lib\Debug\HACD_Debug.lib;..\..\lib\Debug\gwen_Debug.lib;..\..\lib\Debug\BussIK_Debug.lib;..\..\lib\Debug\Bullet3Common_Debug.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;ws2_32.lib;..\..\lib\Debug\BulletExampleBrowserLib_Debug.lib;..\..\lib\Debug\BulletFileLoader_Debug.lib;..\..\lib\Debug\BulletWorldImporter_Debug.lib;..\..\lib\Debug\BulletSoftBody_Debug.lib;..\..\lib\Debug\BulletDynamics_Debug.lib;..\..\lib\Debug\BulletCollision_Debug.lib;..\..\lib\Debug\BulletInverseDynamicsUtils_Debug.lib;..\..\lib\Debug\BulletInverseDynamics_Debug.lib;..\..\lib\Debug\LinearMath_Debug.lib;..\..\lib\Debug\OpenGLWindow_Debug.lib;..\..\lib\Debug\gwen_Debug.lib;..\..\lib\Debug\BussIK_Debug.lib;..\..\lib\Debug\Bullet3Common_Debug.lib;..\..\lib\Debug\HACD_Debug.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -132,7 +132,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\BulletSharpPInvoke\libbulletc\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\HACD;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletXmlWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletFileLoader;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\HACD;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletXmlWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\libbulletc\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
@@ -146,17 +146,17 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR="Release";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR="Release";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR=\"Release\";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR=\"Release\";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -164,7 +164,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;ws2_32.lib;..\..\lib\Release\BulletExampleBrowserLib.lib;..\..\lib\Release\BulletFileLoader.lib;..\..\lib\Release\BulletWorldImporter.lib;..\..\lib\Release\BulletSoftBody.lib;..\..\lib\Release\BulletDynamics.lib;..\..\lib\Release\BulletCollision.lib;..\..\lib\Release\BulletInverseDynamicsUtils.lib;..\..\lib\Release\BulletInverseDynamics.lib;..\..\lib\Release\LinearMath.lib;..\..\lib\Release\OpenGLWindow.lib;..\..\lib\Release\HACD.lib;..\..\lib\Release\gwen.lib;..\..\lib\Release\BussIK.lib;..\..\lib\Release\Bullet3Common.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;ws2_32.lib;..\..\lib\Release\BulletExampleBrowserLib.lib;..\..\lib\Release\BulletFileLoader.lib;..\..\lib\Release\BulletWorldImporter.lib;..\..\lib\Release\BulletSoftBody.lib;..\..\lib\Release\BulletDynamics.lib;..\..\lib\Release\BulletCollision.lib;..\..\lib\Release\BulletInverseDynamicsUtils.lib;..\..\lib\Release\BulletInverseDynamics.lib;..\..\lib\Release\LinearMath.lib;..\..\lib\Release\OpenGLWindow.lib;..\..\lib\Release\gwen.lib;..\..\lib\Release\BussIK.lib;..\..\lib\Release\Bullet3Common.lib;..\..\lib\Release\HACD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -181,7 +181,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\HACD;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletXmlWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletFileLoader;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\HACD;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletXmlWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\libbulletc\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
@@ -195,17 +195,17 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR="MinSizeRel";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR="MinSizeRel";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR=\"MinSizeRel\";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR=\"MinSizeRel\";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -230,7 +230,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\HACD;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletXmlWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize\BulletFileLoader;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\Extras\Serialize;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\HACD;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletXmlWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletWorldImporter;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize\BulletFileLoader;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\Extras\Serialize;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\libbulletc\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -245,15 +245,15 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR="RelWithDebInfo";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR="RelWithDebInfo";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN64;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR=\"RelWithDebInfo\";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN64;USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;BT_ENABLE_CLSOCKET;BT_ENABLE_ENET;CMAKE_INTDIR=\"RelWithDebInfo\";pybullet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\src;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\include;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src;C:\Users\iande\AppData\Local\Programs\Python\Python36\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -277,10 +277,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/pybullet/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/pybullet/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/pybullet/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/pybullet/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -288,12 +288,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/pybullet/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/pybullet/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\examples\pybullet\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/pybullet/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/pybullet/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/pybullet/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/pybullet/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -301,12 +301,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/pybullet/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/pybullet/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\examples\pybullet\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/pybullet/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/pybullet/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/pybullet/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/pybullet/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -314,12 +314,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/pybullet/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/pybullet/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\examples\pybullet\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/pybullet/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/pybullet/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3 -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/pybullet/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src -BD:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc --check-stamp-file D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc/examples/pybullet/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -327,470 +327,471 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/pybullet/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\pybullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/pybullet/CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt;D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\pybullet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\examples\pybullet\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\srcInverseDynamics\btMultiBodyTreeCreator_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\srcInverseDynamics\btMultiBodyTree_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btActionInterface_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btAlignedObjectArray_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btAxisSweep3_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBox2dBox2dCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBox2dShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBoxBoxCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBoxBoxDetector_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBoxCollision_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBoxShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBroadphaseInterface_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBroadphaseProxy_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBulletFile_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBulletWorldImporter_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBulletXmlWorldImporter_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBvhTriangleMeshShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCapsuleShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCharacterControllerInterface_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionConfiguration_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionCreateFunc_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionDispatcherMt_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionDispatcher_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionObjectWrapper_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionObject_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionWorld_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCompoundCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCompoundCompoundCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCompoundFromGimpact_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCompoundShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConcaveShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConeShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConeTwistConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConstraintSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btContactConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btContactSolverInfo_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btContinuousConvexCollision_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvex2dConvex2dAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvex2dShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexCast_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexConcaveCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexConvexAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexHullShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexInternalShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexPenetrationDepthSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexPlaneCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexPointCloudShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexPolyhedron_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexTriangleMeshShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCpuFeatureUtility_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCylinderShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDantzigSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDbvtBroadphase_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDbvt_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDefaultCollisionConfiguration_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDefaultMotionState_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDefaultSoftBodySolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDiscreteCollisionDetectorInterface_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDiscreteDynamicsWorldMt_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDiscreteDynamicsWorld_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDispatcher_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDynamicsWorld_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btEmptyCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btEmptyShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btFixedConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGearConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGeneric6DofConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGeneric6DofSpring2Constraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGeneric6DofSpringConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGeometryUtil_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGhostObject_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGImpactBvh_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGImpactCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGImpactQuantizedBvh_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGImpactShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGjkConvexCast_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGjkEpaPenetrationDepthSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGjkPairDetector_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btHeightfieldTerrainShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btHinge2Constraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btHingeConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btIDebugDraw_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btKinematicCharacterController_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btLemkeSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btManifoldPoint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btManifoldResult_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMinkowskiPenetrationDepthSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMinkowskiSumShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMLCPSolverInterface_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMLCPSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMotionState_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyConstraintSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyDynamicsWorld_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyFixedConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyJointLimitConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyJointMotor_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyLinkCollider_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyLink_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyPoint2Point_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodySliderConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodySolverConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBody_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultimaterialTriangleMeshShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiSphereShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btNNCGConstraintSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btOptimizedBvh_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btOverlappingPairCache_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btOverlappingPairCallback_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPersistentManifold_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPoint2PointConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPointCollector_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPolarDecomposition_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPolyhedralConvexShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btQuantizedBvh_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btRaycastVehicle_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btRigidBody_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btScaledBvhTriangleMeshShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSequentialImpulseConstraintSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSerializer_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btShapeHull_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSimulationIslandManager_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSliderConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBodyConcaveCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBodyHelpers_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBodyRigidBodyCollisionConfiguration_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBodySolvers_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBody_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftRigidCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftRigidDynamicsWorld_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftSoftCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSparseSdf3_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSphereBoxCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSphereShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSphereSphereCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSphereTriangleCollisionAlgorithm_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btStaticPlaneShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btStridingMeshInterface_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTetrahedronShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btThreads_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTransformUtil_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleBuffer_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleCallback_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleIndexVertexArray_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleIndexVertexMaterialArray_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleInfoMap_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleMeshShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleMesh_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleShapeEx_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTypedConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btUniformScalingShape_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btUnionFind_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btUniversalConstraint_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btVehicleRaycaster_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btVoronoiSimplexSolver_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btWheelInfo_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btWorldImporter_wrap.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\collections.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\hacdHACD_wrap.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\IKTrajectoryHelper.cpp" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\srcInverseDynamics\btMultiBodyTreeCreator_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\srcInverseDynamics\btMultiBodyTree_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btActionInterface_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btAlignedObjectArray_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btAxisSweep3_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBox2dBox2dCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBox2dShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBoxBoxCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBoxBoxDetector_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBoxCollision_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBoxShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBroadphaseInterface_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBroadphaseProxy_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBulletFile_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBulletWorldImporter_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBulletXmlWorldImporter_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btBvhTriangleMeshShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCapsuleShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCharacterControllerInterface_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionConfiguration_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionCreateFunc_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionDispatcherMt_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionDispatcher_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionObjectWrapper_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionObject_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCollisionWorld_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCompoundCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCompoundCompoundCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCompoundFromGimpact_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCompoundShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConcaveShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConeShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConeTwistConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConstraintSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btContactConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btContactSolverInfo_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btContinuousConvexCollision_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvex2dConvex2dAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvex2dShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexCast_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexConcaveCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexConvexAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexHullShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexInternalShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexPenetrationDepthSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexPlaneCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexPointCloudShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexPolyhedron_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btConvexTriangleMeshShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCpuFeatureUtility_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btCylinderShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDantzigSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDbvtBroadphase_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDbvt_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDefaultCollisionConfiguration_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDefaultMotionState_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDefaultSoftBodySolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDiscreteCollisionDetectorInterface_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDiscreteDynamicsWorldMt_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDiscreteDynamicsWorld_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDispatcher_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btDynamicsWorld_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btEmptyCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btEmptyShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btFixedConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGearConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGeneric6DofConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGeneric6DofSpring2Constraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGeneric6DofSpringConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGeometryUtil_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGhostObject_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGImpactBvh_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGImpactCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGImpactQuantizedBvh_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGImpactShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGjkConvexCast_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGjkEpaPenetrationDepthSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btGjkPairDetector_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btHeightfieldTerrainShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btHinge2Constraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btHingeConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btIDebugDraw_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btKinematicCharacterController_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btLemkeSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btManifoldPoint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btManifoldResult_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMinkowskiPenetrationDepthSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMinkowskiSumShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMLCPSolverInterface_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMLCPSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMotionState_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyConstraintSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyDynamicsWorld_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyFixedConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyJointLimitConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyJointMotor_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyLinkCollider_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyLink_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodyPoint2Point_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodySliderConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBodySolverConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiBody_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultimaterialTriangleMeshShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btMultiSphereShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btNNCGConstraintSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btOptimizedBvh_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btOverlappingPairCache_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btOverlappingPairCallback_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPersistentManifold_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPoint2PointConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPointCollector_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPolarDecomposition_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btPolyhedralConvexShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btQuantizedBvh_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btRaycastVehicle_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btRigidBody_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btScaledBvhTriangleMeshShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSequentialImpulseConstraintSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSerializer_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btShapeHull_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSimulationIslandManager_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSliderConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBodyConcaveCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBodyHelpers_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBodyRigidBodyCollisionConfiguration_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBodySolvers_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftBody_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftRigidCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftRigidDynamicsWorld_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSoftSoftCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSparseSdf3_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSphereBoxCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSphereShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSphereSphereCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btSphereTriangleCollisionAlgorithm_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btStaticPlaneShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btStridingMeshInterface_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTetrahedronShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btThreads_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTransformUtil_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleBuffer_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleCallback_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleIndexVertexArray_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleIndexVertexMaterialArray_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleInfoMap_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleMeshShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleMesh_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleShapeEx_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTriangleShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btTypedConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btUniformScalingShape_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btUnionFind_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btUniversalConstraint_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btVehicleRaycaster_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btVoronoiSimplexSolver_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btWheelInfo_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\btWorldImporter_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\bulletc.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\collections.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\conversion.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\hacdHACD_wrap.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\BulletSharpPInvoke\libbulletc\src\main.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\IKTrajectoryHelper.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ExampleBrowser\InProcessExampleBrowser.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\TinyRendererVisualShapeConverter.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\TinyRendererVisualShapeConverter.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\OpenGLWindow\SimpleCamera.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\OpenGLWindow\SimpleCamera.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\geometry.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\model.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\tgaimage.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\our_gl.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\TinyRenderer\TinyRenderer.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\InProcessMemory.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClient.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClient.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServer.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServer.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerExample.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerExampleBullet2.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\SharedMemoryInProcessPhysicsC_API.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerSharedMemory.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerSharedMemory.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsDirect.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsDirect.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsDirectC_API.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsDirectC_API.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerCommandProcessor.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsServerCommandProcessor.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\b3PluginManager.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\b3PluginManager.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientSharedMemory.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientSharedMemory.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientSharedMemory_C_API.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientSharedMemory_C_API.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientC_API.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientC_API.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\Win32SharedMemory.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\Win32SharedMemory.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PosixSharedMemory.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PosixSharedMemory.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Utils\b3ResourcePath.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Utils\b3ResourcePath.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Utils\RobotLoggingUtil.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Utils\RobotLoggingUtil.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\tinyxml\tinystr.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\tinyxml\tinyxml.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\tinyxml\tinyxmlerror.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\tinyxml\tinyxmlparser.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\stb_image\stb_image.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportObjDemo\LoadMeshFromObj.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\BulletUrdfImporter.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\URDF2Bullet.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\UrdfParser.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportURDFDemo\urdfStringSplit.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreading\b3PosixThreadSupport.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreading\b3Win32ThreadSupport.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\MultiThreading\b3ThreadSupportInterface.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientUDP.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientUDP_C_API.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientUDP.h" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientUDP_C_API.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\win32.c">
+    <ClCompile Include="..\..\..\..\src\libbulletc\srcInverseDynamics\btMultiBodyTreeCreator_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\srcInverseDynamics\btMultiBodyTree_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btActionInterface_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btAlignedObjectArray_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btAxisSweep3_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBox2dBox2dCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBox2dShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBoxBoxCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBoxBoxDetector_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBoxCollision_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBoxShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBroadphaseInterface_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBroadphaseProxy_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBulletFile_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBulletWorldImporter_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBulletXmlWorldImporter_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btBvhTriangleMeshShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCapsuleShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCharacterControllerInterface_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionConfiguration_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionCreateFunc_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionDispatcherMt_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionDispatcher_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionObjectWrapper_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionObject_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCollisionWorld_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCompoundCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCompoundCompoundCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCompoundFromGimpact_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCompoundShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConcaveShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConeShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConeTwistConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConstraintSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btContactConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btContactSolverInfo_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btContinuousConvexCollision_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvex2dConvex2dAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvex2dShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexCast_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexConcaveCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexConvexAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexHullShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexInternalShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexPenetrationDepthSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexPlaneCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexPointCloudShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexPolyhedron_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btConvexTriangleMeshShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCpuFeatureUtility_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btCylinderShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDantzigSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDbvtBroadphase_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDbvt_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDefaultCollisionConfiguration_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDefaultMotionState_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDefaultSoftBodySolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDiscreteCollisionDetectorInterface_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDiscreteDynamicsWorldMt_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDiscreteDynamicsWorld_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDispatcher_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btDynamicsWorld_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btEmptyCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btEmptyShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btFixedConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGearConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGeneric6DofConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGeneric6DofSpring2Constraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGeneric6DofSpringConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGeometryUtil_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGhostObject_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGImpactBvh_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGImpactCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGImpactQuantizedBvh_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGImpactShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGjkConvexCast_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGjkEpaPenetrationDepthSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btGjkPairDetector_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btHeightfieldTerrainShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btHinge2Constraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btHingeConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btIDebugDraw_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btKinematicCharacterController_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btLemkeSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btManifoldPoint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btManifoldResult_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMinkowskiPenetrationDepthSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMinkowskiSumShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMLCPSolverInterface_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMLCPSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMotionState_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyConstraintSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyDynamicsWorld_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyFixedConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyJointLimitConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyJointMotor_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyLinkCollider_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyLink_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodyPoint2Point_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodySliderConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBodySolverConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiBody_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultimaterialTriangleMeshShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btMultiSphereShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btNNCGConstraintSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btOptimizedBvh_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btOverlappingPairCache_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btOverlappingPairCallback_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btPersistentManifold_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btPoint2PointConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btPointCollector_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btPolarDecomposition_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btPolyhedralConvexShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btQuantizedBvh_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btRaycastVehicle_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btRigidBody_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btScaledBvhTriangleMeshShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSequentialImpulseConstraintSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSerializer_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btShapeHull_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSimulationIslandManager_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSliderConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSoftBodyConcaveCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSoftBodyHelpers_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSoftBodyRigidBodyCollisionConfiguration_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSoftBodySolvers_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSoftBody_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSoftRigidCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSoftRigidDynamicsWorld_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSoftSoftCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSparseSdf3_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSphereBoxCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSphereShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSphereSphereCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btSphereTriangleCollisionAlgorithm_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btStaticPlaneShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btStridingMeshInterface_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTetrahedronShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btThreads_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTransformUtil_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleBuffer_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleCallback_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleIndexVertexArray_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleIndexVertexMaterialArray_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleInfoMap_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleMeshShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleMesh_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleShapeEx_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTriangleShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btTypedConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btUniformScalingShape_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btUnionFind_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btUniversalConstraint_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btVehicleRaycaster_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btVoronoiSimplexSolver_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btWheelInfo_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\btWorldImporter_wrap.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\collections.cpp" />
+    <ClCompile Include="..\..\..\..\src\libbulletc\src\hacdHACD_wrap.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\IKTrajectoryHelper.cpp" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\srcInverseDynamics\btMultiBodyTreeCreator_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\srcInverseDynamics\btMultiBodyTree_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btActionInterface_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btAlignedObjectArray_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btAxisSweep3_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBox2dBox2dCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBox2dShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBoxBoxCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBoxBoxDetector_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBoxCollision_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBoxShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBroadphaseInterface_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBroadphaseProxy_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBulletFile_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBulletWorldImporter_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBulletXmlWorldImporter_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btBvhTriangleMeshShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCapsuleShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCharacterControllerInterface_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionConfiguration_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionCreateFunc_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionDispatcherMt_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionDispatcher_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionObjectWrapper_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionObject_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCollisionWorld_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCompoundCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCompoundCompoundCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCompoundFromGimpact_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCompoundShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConcaveShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConeShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConeTwistConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConstraintSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btContactConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btContactSolverInfo_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btContinuousConvexCollision_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvex2dConvex2dAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvex2dShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexCast_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexConcaveCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexConvexAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexHullShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexInternalShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexPenetrationDepthSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexPlaneCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexPointCloudShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexPolyhedron_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btConvexTriangleMeshShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCpuFeatureUtility_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btCylinderShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDantzigSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDbvtBroadphase_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDbvt_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDefaultCollisionConfiguration_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDefaultMotionState_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDefaultSoftBodySolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDiscreteCollisionDetectorInterface_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDiscreteDynamicsWorldMt_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDiscreteDynamicsWorld_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDispatcher_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btDynamicsWorld_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btEmptyCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btEmptyShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btFixedConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGearConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGeneric6DofConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGeneric6DofSpring2Constraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGeneric6DofSpringConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGeometryUtil_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGhostObject_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGImpactBvh_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGImpactCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGImpactQuantizedBvh_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGImpactShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGjkConvexCast_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGjkEpaPenetrationDepthSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btGjkPairDetector_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btHeightfieldTerrainShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btHinge2Constraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btHingeConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btIDebugDraw_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btKinematicCharacterController_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btLemkeSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btManifoldPoint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btManifoldResult_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMinkowskiPenetrationDepthSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMinkowskiSumShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMLCPSolverInterface_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMLCPSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMotionState_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyConstraintSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyDynamicsWorld_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyFixedConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyJointLimitConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyJointMotor_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyLinkCollider_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyLink_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyPoint2Point_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodySliderConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodySolverConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBodyTree_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiBody_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultimaterialTriangleMeshShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btMultiSphereShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btNNCGConstraintSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btOptimizedBvh_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btOverlappingPairCache_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btOverlappingPairCallback_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btPersistentManifold_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btPoint2PointConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btPointCollector_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btPolarDecomposition_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btPolyhedralConvexShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btQuantizedBvh_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btRaycastVehicle_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btRigidBody_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btScaledBvhTriangleMeshShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSequentialImpulseConstraintSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSerializer_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btShapeHull_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSimulationIslandManager_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSliderConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSoftBodyConcaveCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSoftBodyHelpers_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSoftBodyRigidBodyCollisionConfiguration_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSoftBodySolvers_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSoftBody_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSoftRigidCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSoftRigidDynamicsWorld_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSoftSoftCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSparseSdf3_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSphereBoxCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSphereShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSphereSphereCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btSphereTriangleCollisionAlgorithm_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btStaticPlaneShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btStridingMeshInterface_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTetrahedronShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btThreads_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTransformUtil_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleBuffer_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleCallback_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleIndexVertexArray_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleIndexVertexMaterialArray_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleInfoMap_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleMeshShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleMesh_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleShapeEx_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTriangleShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btTypedConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btUniformScalingShape_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btUnionFind_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btUniversalConstraint_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btVehicleRaycaster_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btVoronoiSimplexSolver_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btWheelInfo_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\btWorldImporter_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\bulletc.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\collections.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\conversion.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\hacdHACD_wrap.h" />
+    <ClInclude Include="..\..\..\..\src\libbulletc\src\main.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\IKTrajectoryHelper.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ExampleBrowser\InProcessExampleBrowser.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\TinyRendererVisualShapeConverter.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\TinyRendererVisualShapeConverter.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\OpenGLWindow\SimpleCamera.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\OpenGLWindow\SimpleCamera.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\geometry.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\model.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\tgaimage.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\our_gl.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\TinyRenderer\TinyRenderer.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\InProcessMemory.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClient.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClient.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServer.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServer.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerExample.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerExampleBullet2.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\SharedMemoryInProcessPhysicsC_API.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerSharedMemory.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerSharedMemory.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirect.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirect.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirectC_API.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsDirectC_API.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerCommandProcessor.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsServerCommandProcessor.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\b3PluginManager.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\b3PluginManager.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory_C_API.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientSharedMemory_C_API.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientC_API.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientC_API.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\Win32SharedMemory.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\Win32SharedMemory.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PosixSharedMemory.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PosixSharedMemory.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\b3ResourcePath.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\b3ResourcePath.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\RobotLoggingUtil.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Utils\RobotLoggingUtil.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinystr.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\Wavefront\tiny_obj_loader.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\stb_image\stb_image.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportColladaDemo\LoadMeshFromCollada.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\LoadMeshFromObj.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportObjDemo\Wavefront2GLInstanceGraphicsShape.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMJCFDemo\BulletMJCFImporter.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\BulletUrdfImporter.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\MyMultiBodyCreator.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\URDF2Bullet.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\UrdfParser.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportURDFDemo\urdfStringSplit.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\Importers\ImportMeshUtility\b3ImportMeshUtility.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3PosixThreadSupport.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3Win32ThreadSupport.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\MultiThreading\b3ThreadSupportInterface.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientUDP.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientUDP_C_API.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientUDP.h" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientUDP_C_API.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\win32.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\unix.c">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\unix.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\callbacks.c">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\callbacks.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\compress.c">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\compress.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\host.c">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\host.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\list.c">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\list.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\packet.c">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\packet.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\peer.c">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\peer.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\enet\protocol.c">
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\enet\protocol.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientTCP.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientTCP.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientTCP_C_API.cpp" />
-    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\SharedMemory\PhysicsClientTCP_C_API.h" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src\SimpleSocket.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src\ActiveSocket.cpp" />
-    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\bullet3\examples\ThirdPartyLibs\clsocket\src\PassiveSocket.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientTCP.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientTCP.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientTCP_C_API.cpp" />
+    <ClInclude Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\SharedMemory\PhysicsClientTCP_C_API.h" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src\SimpleSocket.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src\ActiveSocket.cpp" />
+    <ClCompile Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\src\examples\ThirdPartyLibs\clsocket\src\PassiveSocket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\DropBoxRoot\Dropbox\Unity\Unity\Bullet\newBulletBuild\ian\BulletSharpPInvoke\libbulletc\libbulletc-Windows\libbulletc\ZERO_CHECK.vcxproj">

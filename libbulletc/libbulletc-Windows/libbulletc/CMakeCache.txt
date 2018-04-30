@@ -66,7 +66,7 @@ BULLET2_USE_THREAD_LOCKS:BOOL=OFF
 BULLET_PHYSICS_BINARY_DIR:STATIC=D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/libbulletc-Windows/libbulletc
 
 //Value Computed by CMake
-BULLET_PHYSICS_SOURCE_DIR:STATIC=D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3
+BULLET_PHYSICS_SOURCE_DIR:STATIC=D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src
 
 //Dependencies for target
 Bullet2FileLoader_LIB_DEPENDS:STATIC=
@@ -360,10 +360,10 @@ USE_CUSTOM_VECTOR_MATH:BOOL=OFF
 USE_DOUBLE_PRECISION:BOOL=OFF
 
 //Use Glut
-USE_GLUT:BOOL=ON
+USE_GLUT:BOOL=OFF
 
 //Use Graphical Benchmark
-USE_GRAPHICAL_BENCHMARK:BOOL=ON
+USE_GRAPHICAL_BENCHMARK:BOOL=OFF
 
 //Compile your program with AVX instructions
 USE_MSVC_AVX:BOOL=OFF
@@ -393,10 +393,10 @@ USE_MSVC_RUNTIME_LIBRARY_DLL:BOOL=OFF
 USE_MSVC_STRING_POOLING:BOOL=ON
 
 //Use btSoftMultiBodyDynamicsWorld
-USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD:BOOL=OFF
+USE_SOFT_BODY_MULTI_BODY_DYNAMICS_WORLD:BOOL=ON
 
 //Path to a file.
-_FIND_LIB_PYTHON_PY:FILEPATH=D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/build3/cmake/FindLibPython.py
+_FIND_LIB_PYTHON_PY:FILEPATH=D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/build3/cmake/FindLibPython.py
 
 //Dependencies for the target
 clsocket_LIB_DEPENDS:STATIC=general;Ws2_32.lib;
@@ -475,7 +475,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3
+CMAKE_HOME_DIRECTORY:INTERNAL=D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS

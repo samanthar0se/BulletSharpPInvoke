@@ -1,4 +1,4 @@
-# Install script for directory: D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/examples/ThirdPartyLibs/BussIK
+# Install script for directory: D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/examples/ThirdPartyLibs/BussIK
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

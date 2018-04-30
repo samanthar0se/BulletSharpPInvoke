@@ -1,4 +1,4 @@
-# Install script for directory: D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/bullet3/src/BulletDynamics
+# Install script for directory: D:/DropBoxRoot/Dropbox/Unity/Unity/Bullet/newBulletBuild/ian/BulletSharpPInvoke/libbulletc/src/src/BulletDynamics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
