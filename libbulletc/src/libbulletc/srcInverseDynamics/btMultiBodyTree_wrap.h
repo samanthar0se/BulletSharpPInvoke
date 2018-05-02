@@ -23,10 +23,9 @@ extern "C" {
 		EXPORT int MultiBodyTree_calculateJacobians(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* q);
 		EXPORT int MultiBodyTree_calculateJacobians2(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* q, btScalar* u);
 		EXPORT int MultiBodyTree_calculateKinematics(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* q, btScalar* u, btScalar* dot_u);
-		/*
-		EXPORT void MultiBodyTree_calculateMassMatrix(btMultiBodyTree* obj, vecx^ q, bool update_kinematics, bool initialize_matrix, bool set_lower_triangular_matrix, matxx^ mass_matrix);
-		EXPORT int MultiBodyTree_calculateMassMatrix(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* q, btScalar* mass_matrix);
-		*/
+		
+		EXPORT int MultiBodyTree_calculateMassMatrix(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* q, bool update_kinematics, bool initialize_matrix, bool set_lower_triangular_matrix, btScalar* mass_matrix);
+		EXPORT int MultiBodyTree_calculateMassMatrix2(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* q, btScalar* mass_matrix);
 		
 		EXPORT int MultiBodyTree_calculatePositionAndVelocityKinematics(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* q, btScalar* u);
 		EXPORT int MultiBodyTree_calculatePositionKinematics(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* q);
@@ -42,8 +41,8 @@ extern "C" {
 		EXPORT int MultiBodyTree_getBodyDotJacobianRotU(btInverseDynamics::MultiBodyTree* obj, int body_index, btVector3* world_dot_jac_rot_u);
 		EXPORT int MultiBodyTree_getBodyDotJacobianTransU(btInverseDynamics::MultiBodyTree* obj, int body_index, btVector3* world_dot_jac_trans_u);
 		EXPORT int MultiBodyTree_getBodyFirstMassMoment(btInverseDynamics::MultiBodyTree* obj, int body_index, btVector3* first_mass_moment);
-		//EXPORT int MultiBodyTree_getBodyJacobianRot(btInverseDynamics::MultiBodyTree* obj, int body_index, btMatrix3X* world_jac_rot);
-		//EXPORT int MultiBodyTree_getBodyJacobianTrans(btInverseDynamics::MultiBodyTree* obj, int body_index, btMatrix3X* world_jac_trans);
+		EXPORT int MultiBodyTree_getBodyJacobianRot(btInverseDynamics::MultiBodyTree* obj, int body_index, int numMultiBodyDofs, int baseDofs, btScalar* world_jac_rot);
+		EXPORT int MultiBodyTree_getBodyJacobianTrans(btInverseDynamics::MultiBodyTree* obj, int body_index, int numMultiBodyDofs, int baseDofs, btScalar* outMat);
 		EXPORT int MultiBodyTree_getBodyLinearAcceleration(btInverseDynamics::MultiBodyTree* obj, int body_index, btVector3* world_acceleration);
 		EXPORT int MultiBodyTree_getBodyLinearVelocity(btInverseDynamics::MultiBodyTree* obj, int body_index, btVector3* world_velocity);
 		EXPORT int MultiBodyTree_getBodyLinearVelocityCoM(btInverseDynamics::MultiBodyTree* obj, int body_index, btVector3* world_velocity);

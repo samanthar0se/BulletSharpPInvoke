@@ -7,9 +7,8 @@
 #define btSoftBody_AJoint_IControlWrapper void
 #define btSoftBody_ImplicitFnWrapper void
 #else
-typedef void (*p_btSoftBody_AJoint_IControl_Prepare)(btSoftBody_AJoint* aJoint);
-typedef btScalar (*p_btSoftBody_AJoint_IControl_Speed)(btSoftBody_AJoint* aJoint,
-	btScalar current);
+typedef void (*p_btSoftBody_AJoint_IControl_Prepare)(void* managedWrapper, btSoftBody_AJoint* aJoint);
+typedef btScalar (*p_btSoftBody_AJoint_IControl_Speed)(void* managedWrapper, btSoftBody_AJoint* aJoint, btScalar current);
 
 class btSoftBody_AJoint_IControlWrapper : public btSoftBody_AJoint_IControl
 {

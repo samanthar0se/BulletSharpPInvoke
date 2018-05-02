@@ -5,18 +5,19 @@
 #define p_btMotionState_setWorldTransform void*
 #define btMotionStateWrapper void
 #else
-typedef void (*p_btMotionState_getWorldTransform)(btTransform* worldTrans);
-typedef void (*p_btMotionState_setWorldTransform)(const btTransform* worldTrans);
+typedef void (*p_btMotionState_getWorldTransform)(void* managedMotionState, btTransform* worldTrans);
+typedef void (*p_btMotionState_setWorldTransform)(void* managedMotionState, const btTransform* worldTrans);
 
 class btMotionStateWrapper : public btMotionState
 {
 private:
+	void* managedMotionState;
 	p_btMotionState_getWorldTransform _getWorldTransformCallback;
 	p_btMotionState_setWorldTransform _setWorldTransformCallback;
 
 public:
 	btMotionStateWrapper(p_btMotionState_getWorldTransform getWorldTransformCallback,
-		p_btMotionState_setWorldTransform setWorldTransformCallback);
+		p_btMotionState_setWorldTransform setWorldTransformCallback, void* managedMotionStatePtr);
 
 	virtual void getWorldTransform(btTransform& worldTrans) const;
 	virtual void setWorldTransform(const btTransform& worldTrans);
@@ -27,7 +28,7 @@ public:
 extern "C" {
 #endif
 	EXPORT btMotionStateWrapper* btMotionStateWrapper_new(p_btMotionState_getWorldTransform getWorldTransformCallback,
-		p_btMotionState_setWorldTransform setWorldTransformCallback);
+		p_btMotionState_setWorldTransform setWorldTransformCallback, void* managedMotionStatePtr);
 
 	EXPORT void btMotionState_getWorldTransform(btMotionState* obj, btTransform* worldTrans);
 	EXPORT void btMotionState_setWorldTransform(btMotionState* obj, const btTransform* worldTrans);

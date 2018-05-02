@@ -29,10 +29,10 @@
 			obj->addUserForce(body_index, body_mom);
 		}
 		
-		int MultiBodyTree_calculateInverseDynamics(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* qq, btScalar* u, btScalar* dot_u, btScalar* joint_forcesOut) {
-			btInverseDynamics::vecx nu(num_dof + baseDofs), qdot(num_dof + baseDofs), q(num_dof + baseDofs), joint_force(num_dof + baseDofs);
+		int MultiBodyTree_calculateInverseDynamics(btInverseDynamics::MultiBodyTree* obj, int numMultiBodyDofs, int baseDofs, btScalar* qq, btScalar* u, btScalar* dot_u, btScalar* joint_forcesOut) {
+			btInverseDynamics::vecx nu(numMultiBodyDofs + baseDofs), qdot(numMultiBodyDofs + baseDofs), q(numMultiBodyDofs + baseDofs), joint_force(numMultiBodyDofs + baseDofs);
 
-			for (int i = 0; i < num_dof; i++)
+			for (int i = 0; i < numMultiBodyDofs; i++)
 			{
 				q[i + baseDofs] = qq[i];
 				qdot[i + baseDofs] = u[i];
@@ -40,11 +40,11 @@
 			}
 
 			// Deal with set gravity the gravity to correspond to the world gravity
-			//btInverseDynamics::vec3 id_grav(m_data->m_dynamicsWorld->getGravity());
+			// btInverseDynamics::vec3 id_grav(m_data->m_dynamicsWorld->getGravity());
 			int ret = obj->calculateInverseDynamics(q, qdot, nu, &joint_force);
 			if (ret != -1)
 			{
-				for (int i = 0; i < num_dof; i++)
+				for (int i = 0; i < numMultiBodyDofs; i++)
 				{
 					joint_forcesOut[i] = joint_force[i + baseDofs];
 				}
@@ -52,9 +52,9 @@
 			return ret;
 		}
 		
-		int MultiBodyTree_calculateJacobians(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* qq) {
-			btInverseDynamics::vecx q(num_dof + baseDofs);
-			for (int i = 0; i < num_dof; i++)
+		int MultiBodyTree_calculateJacobians(btInverseDynamics::MultiBodyTree* obj, int numMultiBodyDofs, int baseDofs, btScalar* qq) {
+			btInverseDynamics::vecx q(numMultiBodyDofs + baseDofs);
+			for (int i = 0; i < numMultiBodyDofs; i++)
 			{
 				q[i + baseDofs] = qq[i];
 			}
@@ -62,9 +62,9 @@
 			return ret;
 		}
 
-		int MultiBodyTree_calculateJacobians2(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* qq, btScalar* uu) {
-			btInverseDynamics::vecx q(num_dof + baseDofs), u(num_dof + baseDofs);
-			for (int i = 0; i < num_dof; i++)
+		int MultiBodyTree_calculateJacobians2(btInverseDynamics::MultiBodyTree* obj, int numMultiBodyDofs, int baseDofs, btScalar* qq, btScalar* uu) {
+			btInverseDynamics::vecx q(numMultiBodyDofs + baseDofs), u(numMultiBodyDofs + baseDofs);
+			for (int i = 0; i < numMultiBodyDofs; i++)
 			{
 				q[i + baseDofs] = qq[i];
 				u[i + baseDofs] = uu[i];
@@ -73,9 +73,9 @@
 			return ret;
 		}
 
-		int MultiBodyTree_calculateKinematics(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* qq, btScalar* uu, btScalar* dot_uu) {
-			btInverseDynamics::vecx q(num_dof + baseDofs), u(num_dof + baseDofs), dot_u(num_dof + baseDofs);
-			for (int i = 0; i < num_dof; i++)
+		int MultiBodyTree_calculateKinematics(btInverseDynamics::MultiBodyTree* obj, int numMultiBodyDofs, int baseDofs, btScalar* qq, btScalar* uu, btScalar* dot_uu) {
+			btInverseDynamics::vecx q(numMultiBodyDofs + baseDofs), u(numMultiBodyDofs + baseDofs), dot_u(numMultiBodyDofs + baseDofs);
+			for (int i = 0; i < numMultiBodyDofs; i++)
 			{
 				q[i + baseDofs] = qq[i];
 				u[i + baseDofs] = uu[i];
@@ -85,33 +85,51 @@
 			return ret;
 		}
 
-		/*
-		EXPORT void MultiBodyTree_calculateMassMatrix(btMultiBodyTree* obj, vecx^ q, bool update_kinematics, bool initialize_matrix, bool set_lower_triangular_matrix, matxx^ mass_matrix);
-		*/
-		/*
-		int MultiBodyTree_calculateMassMatrix(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* qq, btScalar* mass_matrix_out) {
-			btInverseDynamics::vecx q(num_dof + baseDofs);
-			btInverseDynamics::matxx massMatrix(num_dof, num_dof);
-			for (int i = 0; i < num_dof; i++)
+		int MultiBodyTree_calculateMassMatrix(btInverseDynamics::MultiBodyTree* obj, int numMultiBodyDofs, int baseDofs, btScalar* qq, bool update_kinematics, bool initialize_matrix, bool set_lower_triangular_matrix, btScalar* mass_matrix_out) {
+			btInverseDynamics::vecx q(numMultiBodyDofs + baseDofs);
+			btInverseDynamics::matxx massMatrix(numMultiBodyDofs + baseDofs, numMultiBodyDofs + baseDofs);
+			for (int i = 0; i < numMultiBodyDofs; i++)
+			{
+				q[i + baseDofs] = qq[i];
+			}
+			int ret = obj->calculateMassMatrix(q, update_kinematics, initialize_matrix, set_lower_triangular_matrix, &massMatrix);
+			if (ret != -1)
+			{
+				for (int i = 0; i < numMultiBodyDofs; i++)
+				{
+					for (int j = 0; j < numMultiBodyDofs; j++)
+					{
+						mass_matrix_out[i * numMultiBodyDofs + j] = massMatrix(i + baseDofs, j + baseDofs);
+					}
+				}
+			}
+			return ret;
+		}
+
+		int MultiBodyTree_calculateMassMatrix2(btInverseDynamics::MultiBodyTree* obj, int numMultiBodyDofs, int baseDofs, btScalar* qq, btScalar* mass_matrix_out) {
+			btInverseDynamics::vecx q(numMultiBodyDofs + baseDofs);
+			btInverseDynamics::matxx massMatrix(numMultiBodyDofs + baseDofs, numMultiBodyDofs + baseDofs);
+			for (int i = 0; i < numMultiBodyDofs; i++)
 			{
 				q[i + baseDofs] = qq[i];
 			}
 			int ret = obj->calculateMassMatrix(q, &massMatrix);
 			if (ret != -1)
 			{
-				for (int i = 0; i < num_dof; i++)
+				for (int i = 0; i < numMultiBodyDofs; i++)
 				{
-
-					mass_matrix_out[i] = massMatrix[i];
+					for (int j = 0; j < numMultiBodyDofs; j++)
+					{
+						mass_matrix_out[i * numMultiBodyDofs + j] = massMatrix(i + baseDofs, j + baseDofs);
+					}
 				}
 			}
 			return ret;
 		}
-		*/
 
-		int MultiBodyTree_calculatePositionAndVelocityKinematics(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* qq, btScalar* uu) {
-			btInverseDynamics::vecx q(num_dof + baseDofs), u(num_dof + baseDofs);
-			for (int i = 0; i < num_dof; i++)
+		int MultiBodyTree_calculatePositionAndVelocityKinematics(btInverseDynamics::MultiBodyTree* obj, int numMultiBodyDofs, int baseDofs, btScalar* qq, btScalar* uu) {
+			btInverseDynamics::vecx q(numMultiBodyDofs + baseDofs), u(numMultiBodyDofs + baseDofs);
+			for (int i = 0; i < numMultiBodyDofs; i++)
 			{
 				q[i + baseDofs] = qq[i];
 				u[i + baseDofs] = uu[i];
@@ -120,9 +138,9 @@
 			return ret;
 		}
 
-		int MultiBodyTree_calculatePositionKinematics(btInverseDynamics::MultiBodyTree* obj, int num_dof, int baseDofs, btScalar* qq) {
-			btInverseDynamics::vecx q(num_dof + baseDofs);
-			for (int i = 0; i < num_dof; i++)
+		int MultiBodyTree_calculatePositionKinematics(btInverseDynamics::MultiBodyTree* obj, int numMultiBodyDofs, int baseDofs, btScalar* qq) {
+			btInverseDynamics::vecx q(numMultiBodyDofs + baseDofs);
+			for (int i = 0; i < numMultiBodyDofs; i++)
 			{
 				q[i + baseDofs] = qq[i];
 			}
@@ -219,25 +237,33 @@
 			return ret;
 		}
 
-		/*
-		int MultiBodyTree_getBodyJacobianRot(btInverseDynamics::MultiBodyTree* obj, int body_index, btMatrix3x3* outMat) {
-			btInverseDynamics::mat33 tmp;
+		int MultiBodyTree_getBodyJacobianRot(btInverseDynamics::MultiBodyTree* obj, int body_index, int numMultiBodyDofs, int baseDofs, btScalar* world_jac_rot){
+			int rows = 3;
+			btInverseDynamics::mat3x tmp(rows, numMultiBodyDofs + baseDofs);
 			int ret = obj->getBodyJacobianRot(body_index, &tmp);
 			if (ret != -1) {
-				BTMATRIX3X3_OUT(outMat, &tmp);
+				for (int i = 0; i < rows; i++) {
+					for (int j = 0; j < numMultiBodyDofs; j++) {
+						world_jac_rot[i * numMultiBodyDofs + j] = tmp(i, j + baseDofs);
+					}
+				}
 			}
 			return ret;
 		}
 
-		int MultiBodyTree_getBodyJacobianTrans(btInverseDynamics::MultiBodyTree* obj, int body_index, btMatrix3x3* outMat) {
-			btInverseDynamics::mat33 tmp;
+		int MultiBodyTree_getBodyJacobianTrans(btInverseDynamics::MultiBodyTree* obj, int body_index, int numMultiBodyDofs, int baseDofs, btScalar* outMat) {
+			int rows = 3;
+			btInverseDynamics::mat3x tmp(rows, numMultiBodyDofs + baseDofs);
 			int ret = obj->getBodyJacobianTrans(body_index, &tmp);
 			if (ret != -1) {
-				BTMATRIX3X3_OUT(outMat, &tmp);
+				for (int i = 0; i < rows; i++) {
+					for (int j = 0; j < numMultiBodyDofs; j++) {
+						outMat[i * numMultiBodyDofs + j] = tmp(i, j + baseDofs);
+					}
+				}
 			}
 			return ret;
 		}
-		*/
 
 		int MultiBodyTree_getBodyLinearAcceleration(btInverseDynamics::MultiBodyTree* obj, int body_index, btVector3* outVec) {
 			btInverseDynamics::vec3 tmp;

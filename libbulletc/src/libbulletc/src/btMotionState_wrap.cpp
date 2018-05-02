@@ -5,8 +5,9 @@
 #include "btMotionState_wrap.h"
 
 btMotionStateWrapper::btMotionStateWrapper(p_btMotionState_getWorldTransform getWorldTransformCallback,
-	p_btMotionState_setWorldTransform setWorldTransformCallback)
+	p_btMotionState_setWorldTransform setWorldTransformCallback, void* managedMotionStatePtr)
 {
+	managedMotionState = managedMotionStatePtr;
 	_getWorldTransformCallback = getWorldTransformCallback;
 	_setWorldTransformCallback = setWorldTransformCallback;
 }
@@ -14,21 +15,21 @@ btMotionStateWrapper::btMotionStateWrapper(p_btMotionState_getWorldTransform get
 void btMotionStateWrapper::getWorldTransform(btTransform& worldTrans) const
 {
 	BTTRANSFORM_DEF(worldTrans);
-	_getWorldTransformCallback(&BTTRANSFORM_USE_REF(worldTrans));
+	_getWorldTransformCallback(managedMotionState, &BTTRANSFORM_USE_REF(worldTrans));
 	BTTRANSFORM_DEF_OUT_REF(worldTrans);
 }
 
 void btMotionStateWrapper::setWorldTransform(const btTransform& worldTrans)
 {
 	BTTRANSFORM_IN_REF(worldTrans);
-	_setWorldTransformCallback(&BTTRANSFORM_USE_REF(worldTrans));
+	_setWorldTransformCallback(managedMotionState, &BTTRANSFORM_USE_REF(worldTrans));
 }
 
 
 btMotionStateWrapper* btMotionStateWrapper_new(p_btMotionState_getWorldTransform getWorldTransformCallback,
-	p_btMotionState_setWorldTransform setWorldTransformCallback)
+	p_btMotionState_setWorldTransform setWorldTransformCallback, void* managedMotionStatePtr)
 {
-	return ALIGNED_NEW(btMotionStateWrapper)(getWorldTransformCallback, setWorldTransformCallback);
+	return ALIGNED_NEW(btMotionStateWrapper)(getWorldTransformCallback, setWorldTransformCallback, managedMotionStatePtr);
 }
 
 

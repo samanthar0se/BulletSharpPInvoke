@@ -5,29 +5,33 @@
 #include "btActionInterface_wrap.h"
 
 btActionInterfaceWrapper::btActionInterfaceWrapper(p_btActionInterface_debugDraw debugDrawCallback,
-	p_btActionInterface_updateAction updateActionCallback)
+	p_btActionInterface_updateAction updateActionCallback, void* managedActionInterfaceWrap)
 {
 	_debugDrawCallback = debugDrawCallback;
 	_updateActionCallback = updateActionCallback;
+    _managedActionInterfaceWrapper = managedActionInterfaceWrap;
 }
 
 void btActionInterfaceWrapper::debugDraw(btIDebugDraw* debugDrawer)
 {
-	_debugDrawCallback(debugDrawer);
+	_debugDrawCallback(_managedActionInterfaceWrapper, debugDrawer);
 }
 
 void btActionInterfaceWrapper::updateAction(btCollisionWorld* collisionWorld, btScalar deltaTimeStep)
 {
-	_updateActionCallback(collisionWorld, deltaTimeStep);
+	_updateActionCallback(_managedActionInterfaceWrapper ,collisionWorld, deltaTimeStep);
 }
 
 
 btActionInterfaceWrapper* btActionInterfaceWrapper_new(p_btActionInterface_debugDraw debugDrawCallback,
-	p_btActionInterface_updateAction updateActionCallback)
+	p_btActionInterface_updateAction updateActionCallback, void* managedActionInterfaceWrap)
 {
-	return new btActionInterfaceWrapper(debugDrawCallback, updateActionCallback);
+	return new btActionInterfaceWrapper(debugDrawCallback, updateActionCallback,managedActionInterfaceWrap);
 }
 
+void* bgActionInterface_getManagedWrapperPntr(btActionInterfaceWrapper* obj){
+    return obj->_managedActionInterfaceWrapper;
+}
 
 void btActionInterface_debugDraw(btActionInterface* obj, btIDebugDraw* debugDrawer)
 {

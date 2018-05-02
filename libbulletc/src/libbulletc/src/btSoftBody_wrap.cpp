@@ -17,13 +17,13 @@ btSoftBody_AJoint_IControlWrapper::btSoftBody_AJoint_IControlWrapper(p_btSoftBod
 
 void btSoftBody_AJoint_IControlWrapper::Prepare(btSoftBody_AJoint* aJoint)
 {
-	_PrepareCallback(aJoint);
+	_PrepareCallback(_wrapperData, aJoint);
 }
 
 btScalar btSoftBody_AJoint_IControlWrapper::Speed(btSoftBody_AJoint* aJoint,
 	btScalar current)
 {
-	return _SpeedCallback(aJoint, current);
+	return _SpeedCallback(_wrapperData, aJoint, current);
 }
 
 void* btSoftBody_AJoint_IControlWrapper::getWrapperData() const
