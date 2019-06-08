@@ -22,16 +22,10 @@ LOCAL_C_INCLUDES := \
 	../../src/src/BulletDynamics/ \
 	../../src/src/BulletCollision/CollisionDispatch/ \
 	../../src/src/BulletCollision/CollisionShapes/ \
-	../../src/src/Bullet3Collision/BroadphaseCollision/ \
-	../../src/src/Bullet3Collision/CollisionDispatch/ \
 	../../src/src/BulletCollision/Gimpact/ \
 	../../src/src/BulletCollision/NarrowPhaseCollision/ \
 	../../src/src/BulletDynamics/ConstraintSolver/ \
-	../../src/src/Bullet3Dynamics/ \
-	../../src/src/Bullet3Dynamics/ConstraintSolver/ \
-	../../src/src/Bullet3Dynamics/shared/ \
 	../../src/src/LinearMath/ \
-	../../src/src/Bullet3Serialize\Bullet2FileLoader/ \
 	../../src/Extras/ConvexDecomposition \
 	../../src/Extras/ \
 	../../src/Extras/Serialize/ \
@@ -194,24 +188,6 @@ LOCAL_SRC_FILES := \
 ../../src/src/LinearMath/btQuickprof.cpp \
 ../../src/src/LinearMath/btSerializer.cpp \
 ../../src/src/LinearMath/btVector3.cpp \
-../../src/src/Bullet3Serialize/Bullet2FileLoader/b3BulletFile.cpp \
-../../src/src/Bullet3Serialize/Bullet2FileLoader/b3Chunk.cpp \
-../../src/src/Bullet3Serialize/Bullet2FileLoader/b3DNA.cpp \
-../../src/src/Bullet3Serialize/Bullet2FileLoader/b3File.cpp \
-../../src/src/Bullet3Serialize/Bullet2FileLoader/b3Serializer.cpp \
-../../src/src/Bullet3Dynamics/b3CpuRigidBodyPipeline.cpp \
-../../src/src/Bullet3Dynamics/ConstraintSolver/b3FixedConstraint.cpp \
-../../src/src/Bullet3Dynamics/ConstraintSolver/b3Generic6DofConstraint.cpp \
-../../src/src/Bullet3Dynamics/ConstraintSolver/b3PgsJacobiSolver.cpp \
-../../src/src/Bullet3Dynamics/ConstraintSolver/b3Point2PointConstraint.cpp \
-../../src/src/Bullet3Dynamics/ConstraintSolver/b3TypedConstraint.cpp \
-../../src/src/Bullet3Collision/BroadPhaseCollision/b3DynamicBvh.cpp \
-../../src/src/Bullet3Collision/BroadPhaseCollision/b3DynamicBvhBroadphase.cpp \
-../../src/src/Bullet3Collision/BroadPhaseCollision/b3OverlappingPairCache.cpp \
-../../src/src/Bullet3Collision/NarrowPhaseCollision/b3ConvexUtility.cpp \
-../../src/src/Bullet3Collision/NarrowPhaseCollision/b3CpuNarrowPhase.cpp \
-../../src/src/Bullet3Geometry/b3ConvexHullComputer.cpp \
-../../src/src/Bullet3Geometry/b3GeometryUtil.cpp \
 ../../src/src/Bullet3Common/b3AlignedAllocator.cpp \
 ../../src/src/Bullet3Common/b3Vector3.cpp \
 ../../src/src/Bullet3Common/b3Logging.cpp \
