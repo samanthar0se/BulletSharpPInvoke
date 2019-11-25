@@ -10,8 +10,6 @@
 		9E60EDB41CC35364009783EB /* b3AlignedAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EB371CC35364009783EB /* b3AlignedAllocator.cpp */; };
 		9E60EDB51CC35364009783EB /* b3Logging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EB3D1CC35364009783EB /* b3Logging.cpp */; };
 		9E60EDB61CC35364009783EB /* b3Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EB491CC35364009783EB /* b3Vector3.cpp */; };
-		9E60EDB71CC35364009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60EB4B1CC35364009783EB /* CMakeLists.txt */; };
-		9E60EDB81CC35364009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60EB4C1CC35364009783EB /* premake4.lua */; };
 		9E60EE051CC35364009783EB /* btAxisSweep3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EC141CC35364009783EB /* btAxisSweep3.cpp */; };
 		9E60EE061CC35364009783EB /* btBroadphaseProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EC171CC35364009783EB /* btBroadphaseProxy.cpp */; };
 		9E60EE071CC35364009783EB /* btCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EC191CC35364009783EB /* btCollisionAlgorithm.cpp */; };
@@ -110,7 +108,6 @@
 		9E60EE641CC35364009783EB /* btVoronoiSimplexSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ECF81CC35364009783EB /* btVoronoiSimplexSolver.cpp */; };
 		9E60EE651CC35364009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60ECFA1CC35364009783EB /* premake4.lua */; };
 		9E60EE661CC35364009783EB /* btKinematicCharacterController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ECFE1CC35364009783EB /* btKinematicCharacterController.cpp */; };
-		9E60EE671CC35364009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60ED001CC35364009783EB /* CMakeLists.txt */; };
 		9E60EE681CC35364009783EB /* btConeTwistConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED021CC35364009783EB /* btConeTwistConstraint.cpp */; };
 		9E60EE691CC35364009783EB /* btContactConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED051CC35364009783EB /* btContactConstraint.cpp */; };
 		9E60EE6A1CC35364009783EB /* btFixedConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED081CC35364009783EB /* btFixedConstraint.cpp */; };
@@ -140,15 +137,12 @@
 		9E60EE821CC35364009783EB /* btDantzigLCP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED441CC35364009783EB /* btDantzigLCP.cpp */; };
 		9E60EE831CC35364009783EB /* btLemkeAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED471CC35364009783EB /* btLemkeAlgorithm.cpp */; };
 		9E60EE841CC35364009783EB /* btMLCPSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED4A1CC35364009783EB /* btMLCPSolver.cpp */; };
-		9E60EE851CC35364009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60ED4F1CC35364009783EB /* premake4.lua */; };
 		9E60EE861CC35364009783EB /* btRaycastVehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED511CC35364009783EB /* btRaycastVehicle.cpp */; };
 		9E60EE871CC35364009783EB /* btWheelInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED541CC35364009783EB /* btWheelInfo.cpp */; };
-		9E60EE881CC35364009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60ED571CC35364009783EB /* CMakeLists.txt */; };
 		9E60EE891CC35364009783EB /* MultiBodyTreeImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED5C1CC35364009783EB /* MultiBodyTreeImpl.cpp */; };
 		9E60EE8A1CC35364009783EB /* MultiBodyTreeInitCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED5E1CC35364009783EB /* MultiBodyTreeInitCache.cpp */; };
 		9E60EE8B1CC35364009783EB /* IDMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED641CC35364009783EB /* IDMath.cpp */; };
 		9E60EE8C1CC35364009783EB /* MultiBodyTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED661CC35364009783EB /* MultiBodyTree.cpp */; };
-		9E60EE8D1CC35364009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60ED681CC35364009783EB /* premake4.lua */; };
 		9E60EE8E1CC35364009783EB /* btDefaultSoftBodySolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED6A1CC35364009783EB /* btDefaultSoftBodySolver.cpp */; };
 		9E60EE8F1CC35364009783EB /* btSoftBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED6C1CC35364009783EB /* btSoftBody.cpp */; };
 		9E60EE901CC35364009783EB /* btSoftBodyConcaveCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED6E1CC35364009783EB /* btSoftBodyConcaveCollisionAlgorithm.cpp */; };
@@ -157,10 +151,7 @@
 		9E60EE931CC35364009783EB /* btSoftRigidCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED781CC35364009783EB /* btSoftRigidCollisionAlgorithm.cpp */; };
 		9E60EE941CC35364009783EB /* btSoftRigidDynamicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED7A1CC35364009783EB /* btSoftRigidDynamicsWorld.cpp */; };
 		9E60EE951CC35364009783EB /* btSoftSoftCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED7C1CC35364009783EB /* btSoftSoftCollisionAlgorithm.cpp */; };
-		9E60EE961CC35364009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60ED7F1CC35364009783EB /* CMakeLists.txt */; };
-		9E60EE971CC35364009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60ED801CC35364009783EB /* premake4.lua */; };
 		9E60EE981CC35364009783EB /* clew.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED821CC35364009783EB /* clew.c */; };
-		9E60EE991CC35364009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60ED841CC35364009783EB /* CMakeLists.txt */; };
 		9E60EE9A1CC35364009783EB /* btAlignedAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED871CC35364009783EB /* btAlignedAllocator.cpp */; };
 		9E60EE9B1CC35364009783EB /* btConvexHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED8A1CC35364009783EB /* btConvexHull.cpp */; };
 		9E60EE9C1CC35364009783EB /* btConvexHullComputer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED8C1CC35364009783EB /* btConvexHullComputer.cpp */; };
@@ -169,8 +160,6 @@
 		9E60EE9F1CC35364009783EB /* btQuickprof.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60ED9F1CC35364009783EB /* btQuickprof.cpp */; };
 		9E60EEA01CC35364009783EB /* btSerializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EDA31CC35364009783EB /* btSerializer.cpp */; };
 		9E60EEA11CC35364009783EB /* btVector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EDA91CC35364009783EB /* btVector3.cpp */; };
-		9E60EEA21CC35364009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60EDAB1CC35364009783EB /* CMakeLists.txt */; };
-		9E60EEA31CC35364009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60EDAC1CC35364009783EB /* premake4.lua */; };
 		9E60EFE01CC35372009783EB /* btActionInterface_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EEA51CC35370009783EB /* btActionInterface_wrap.cpp */; };
 		9E60EFE11CC35372009783EB /* btAlignedObjectArray_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EEA71CC35370009783EB /* btAlignedObjectArray_wrap.cpp */; };
 		9E60EFE21CC35372009783EB /* btAxisSweep3_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60EEA91CC35370009783EB /* btAxisSweep3_wrap.cpp */; };
@@ -331,7 +320,6 @@
 		9E60F0F01CC353C1009783EB /* bestfitobb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0801CC353C1009783EB /* bestfitobb.cpp */; };
 		9E60F0F11CC353C1009783EB /* cd_hull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0821CC353C1009783EB /* cd_hull.cpp */; };
 		9E60F0F21CC353C1009783EB /* cd_wavefront.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0851CC353C1009783EB /* cd_wavefront.cpp */; };
-		9E60F0F31CC353C1009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0871CC353C1009783EB /* CMakeLists.txt */; };
 		9E60F0F41CC353C1009783EB /* concavity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0881CC353C1009783EB /* concavity.cpp */; };
 		9E60F0F51CC353C1009783EB /* ConvexBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F08A1CC353C1009783EB /* ConvexBuilder.cpp */; };
 		9E60F0F61CC353C1009783EB /* ConvexDecomposition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F08C1CC353C1009783EB /* ConvexDecomposition.cpp */; };
@@ -339,22 +327,17 @@
 		9E60F0F81CC353C1009783EB /* float_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0901CC353C1009783EB /* float_math.cpp */; };
 		9E60F0F91CC353C1009783EB /* meshvolume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0921CC353C1009783EB /* meshvolume.cpp */; };
 		9E60F0FA1CC353C1009783EB /* planetri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0941CC353C1009783EB /* planetri.cpp */; };
-		9E60F0FB1CC353C1009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0961CC353C1009783EB /* premake4.lua */; };
 		9E60F0FC1CC353C1009783EB /* raytri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0971CC353C1009783EB /* raytri.cpp */; };
 		9E60F0FD1CC353C1009783EB /* splitplane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0991CC353C1009783EB /* splitplane.cpp */; };
 		9E60F0FE1CC353C1009783EB /* vlookup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F09B1CC353C1009783EB /* vlookup.cpp */; };
 		9E60F0FF1CC353C1009783EB /* btGImpactConvexDecompositionShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F09E1CC353C1009783EB /* btGImpactConvexDecompositionShape.cpp */; };
-		9E60F1001CC353C1009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0A01CC353C1009783EB /* CMakeLists.txt */; };
-		9E60F1011CC353C1009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0A21CC353C1009783EB /* CMakeLists.txt */; };
 		9E60F1021CC353C1009783EB /* hacdCircularList.inl in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0A41CC353C1009783EB /* hacdCircularList.inl */; };
 		9E60F1031CC353C1009783EB /* hacdGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0A51CC353C1009783EB /* hacdGraph.cpp */; };
 		9E60F1041CC353C1009783EB /* hacdHACD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0A71CC353C1009783EB /* hacdHACD.cpp */; };
 		9E60F1051CC353C1009783EB /* hacdICHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0A91CC353C1009783EB /* hacdICHull.cpp */; };
 		9E60F1061CC353C1009783EB /* hacdManifoldMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0AB1CC353C1009783EB /* hacdManifoldMesh.cpp */; };
 		9E60F1071CC353C1009783EB /* hacdVector.inl in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0AE1CC353C1009783EB /* hacdVector.inl */; };
-		9E60F1081CC353C1009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0B01CC353C1009783EB /* premake4.lua */; };
 		9E60F1091CC353C1009783EB /* btMultiBodyTreeCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0B31CC353C1009783EB /* btMultiBodyTreeCreator.cpp */; };
-		9E60F10A1CC353C1009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0B61CC353C1009783EB /* CMakeLists.txt */; };
 		9E60F10B1CC353C1009783EB /* CoilCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0B71CC353C1009783EB /* CoilCreator.cpp */; };
 		9E60F10C1CC353C1009783EB /* DillCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0B91CC353C1009783EB /* DillCreator.cpp */; };
 		9E60F10D1CC353C1009783EB /* IDRandomUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0BB1CC353C1009783EB /* IDRandomUtil.cpp */; };
@@ -362,28 +345,20 @@
 		9E60F10F1CC353C1009783EB /* MultiBodyNameMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0BF1CC353C1009783EB /* MultiBodyNameMap.cpp */; };
 		9E60F1101CC353C1009783EB /* MultiBodyTreeCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0C11CC353C1009783EB /* MultiBodyTreeCreator.cpp */; };
 		9E60F1111CC353C1009783EB /* MultiBodyTreeDebugGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0C31CC353C1009783EB /* MultiBodyTreeDebugGraph.cpp */; };
-		9E60F1121CC353C1009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0C51CC353C1009783EB /* premake4.lua */; };
 		9E60F1131CC353C1009783EB /* SimpleTreeCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0C61CC353C1009783EB /* SimpleTreeCreator.cpp */; };
 		9E60F1141CC353C1009783EB /* User2InternalIndex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0C81CC353C1009783EB /* User2InternalIndex.cpp */; };
 		9E60F1151CC353C1009783EB /* bChunk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0CE1CC353C1009783EB /* bChunk.cpp */; };
 		9E60F1161CC353C1009783EB /* bDNA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0D21CC353C1009783EB /* bDNA.cpp */; };
 		9E60F1171CC353C1009783EB /* bFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0D41CC353C1009783EB /* bFile.cpp */; };
 		9E60F1181CC353C1009783EB /* btBulletFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0D61CC353C1009783EB /* btBulletFile.cpp */; };
-		9E60F1191CC353C1009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0D81CC353C1009783EB /* CMakeLists.txt */; };
-		9E60F11A1CC353C1009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0D91CC353C1009783EB /* premake4.lua */; };
 		9E60F11B1CC353C1009783EB /* btBulletWorldImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0DB1CC353C1009783EB /* btBulletWorldImporter.cpp */; };
 		9E60F11C1CC353C1009783EB /* btWorldImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0DD1CC353C1009783EB /* btWorldImporter.cpp */; };
-		9E60F11D1CC353C1009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0DF1CC353C1009783EB /* CMakeLists.txt */; };
-		9E60F11E1CC353C1009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0E01CC353C1009783EB /* premake4.lua */; };
 		9E60F11F1CC353C1009783EB /* btBulletXmlWorldImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0E21CC353C1009783EB /* btBulletXmlWorldImporter.cpp */; };
-		9E60F1201CC353C1009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0E41CC353C1009783EB /* CMakeLists.txt */; };
-		9E60F1211CC353C1009783EB /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0E51CC353C1009783EB /* premake4.lua */; };
 		9E60F1221CC353C1009783EB /* string_split.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0E61CC353C1009783EB /* string_split.cpp */; };
 		9E60F1231CC353C1009783EB /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0E81CC353C1009783EB /* tinystr.cpp */; };
 		9E60F1241CC353C1009783EB /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0EA1CC353C1009783EB /* tinyxml.cpp */; };
 		9E60F1251CC353C1009783EB /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0EC1CC353C1009783EB /* tinyxmlerror.cpp */; };
 		9E60F1261CC353C1009783EB /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E60F0ED1CC353C1009783EB /* tinyxmlparser.cpp */; };
-		9E60F1271CC353C1009783EB /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F0EE1CC353C1009783EB /* CMakeLists.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2418,6 +2393,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 9E54A0FE1C51C63000B37554;
@@ -2435,35 +2411,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E60EE881CC35364009783EB /* CMakeLists.txt in Resources */,
-				9E60F1271CC353C1009783EB /* CMakeLists.txt in Resources */,
-				9E60F1011CC353C1009783EB /* CMakeLists.txt in Resources */,
 				9E60F1021CC353C1009783EB /* hacdCircularList.inl in Resources */,
-				9E60F11E1CC353C1009783EB /* premake4.lua in Resources */,
-				9E60EDB81CC35364009783EB /* premake4.lua in Resources */,
-				9E60EE851CC35364009783EB /* premake4.lua in Resources */,
-				9E60F0FB1CC353C1009783EB /* premake4.lua in Resources */,
-				9E60EDB71CC35364009783EB /* CMakeLists.txt in Resources */,
-				9E60F0F31CC353C1009783EB /* CMakeLists.txt in Resources */,
-				9E60EE991CC35364009783EB /* CMakeLists.txt in Resources */,
-				9E60EE961CC35364009783EB /* CMakeLists.txt in Resources */,
-				9E60EE971CC35364009783EB /* premake4.lua in Resources */,
-				9E60F10A1CC353C1009783EB /* CMakeLists.txt in Resources */,
-				9E60F1191CC353C1009783EB /* CMakeLists.txt in Resources */,
-				9E60EEA31CC35364009783EB /* premake4.lua in Resources */,
 				9E60F1071CC353C1009783EB /* hacdVector.inl in Resources */,
-				9E60F1081CC353C1009783EB /* premake4.lua in Resources */,
-				9E60F1201CC353C1009783EB /* CMakeLists.txt in Resources */,
-				9E60F1121CC353C1009783EB /* premake4.lua in Resources */,
-				9E60EEA21CC35364009783EB /* CMakeLists.txt in Resources */,
 				9E60EE651CC35364009783EB /* premake4.lua in Resources */,
-				9E60F1001CC353C1009783EB /* CMakeLists.txt in Resources */,
-				9E60EE8D1CC35364009783EB /* premake4.lua in Resources */,
-				9E60F11A1CC353C1009783EB /* premake4.lua in Resources */,
 				9E60EE0F1CC35364009783EB /* CMakeLists.txt in Resources */,
-				9E60F1211CC353C1009783EB /* premake4.lua in Resources */,
-				9E60EE671CC35364009783EB /* CMakeLists.txt in Resources */,
-				9E60F11D1CC353C1009783EB /* CMakeLists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2863,9 +2814,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -2899,8 +2850,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -2908,7 +2860,7 @@
 		9E54A10F1C51C63000B37554 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2936,7 +2888,7 @@
 		9E54A1101C51C63000B37554 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
