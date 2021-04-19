@@ -1,3 +1,7 @@
+This repo contains a few small fixes to make BulletSharp work on iOS 13+ and Apple's M1 ARM architecture. Just build the respective xcode projects and drop the new libraries in.
+
+Original README.md below
+
 # BulletSharp
 
 This is a fork of the BulletSharpPInvoke project. The c# wrappers have been modified slightly so that they work in Unity3d and Mono 2.0 instead of .Net 4.5.
