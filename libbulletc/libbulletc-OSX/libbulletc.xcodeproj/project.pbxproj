@@ -2878,6 +2878,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Extras/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = libbulletc;
 				SKIP_INSTALL = YES;
@@ -2906,6 +2907,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Extras/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = libbulletc;
 				SKIP_INSTALL = YES;
